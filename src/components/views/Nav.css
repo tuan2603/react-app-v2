@@ -1,0 +1,12 @@
+.top-bar {
+    background-color: #d2d2d2;
+}
+.top-bar ul {
+    background-color: transparent;
+}
+.top-bar-right {
+    background-color: transparent;
+}
+.dropdown.menu a {
+    background-color: transparent;
+}
