@@ -1,11 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {render} from 'react-dom';
 import $ from 'jquery';
-import {BrowserRouter} from 'react-router-dom';
-import App from "./containers/App";
-ReactDOM.render((<BrowserRouter>
-        <App/>
-    </BrowserRouter>),
+import { Provider } from 'react-redux';
+
+import { store } from './helpers';
+import {App} from './containers';
+
+render(
+    <Provider store={store}>
+        <App />
+    </Provider>,
     document.getElementById('root'),
     function () {
         $('#menuToggle').click(function () {
