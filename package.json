@@ -6,13 +6,18 @@
     "bootstrap": "^4.1.2",
     "chart": "^0.1.2",
     "chart.js": "^2.7.2",
+    "classnames": "^2.2.6",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.3",
+    "prop-types": "^15.6.2",
     "react": "^16.4.1",
+    "react-autobind": "^1.0.6",
     "react-chartjs-2": "^2.7.4",
     "react-dom": "^16.4.1",
+    "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0"
   },
   "scripts": {
     "start": "react-scripts start",

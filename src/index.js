@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
 import {BrowserRouter} from 'react-router-dom';
-import App from "./App";
+import App from "./containers/App";
 ReactDOM.render((<BrowserRouter>
         <App/>
     </BrowserRouter>),
