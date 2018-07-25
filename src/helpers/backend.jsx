@@ -7,7 +7,7 @@ export function login(phone, password) {
         body: JSON.stringify({phone, password}),
     };
 
-    return fetch(`${config.apiUrl}/api/auth/sign-in-pass-word`, configheader)
+    return fetch(`${config.apiUrl}/api/auth/sign-in-admin`, configheader)
         .then((response) => response.json())
         .then((responseJson) => responseJson);
 

@@ -6,9 +6,10 @@ import {show_notification} from '../../actions/notifyActions';
 import {TOKEN} from '../../constants/Users';
 import {login, history} from '../../helpers';
 import autoBind from 'react-autobind';
-import { setInSession } from '../../utils';
+import { setInSession,removeSession } from '../../utils';
 
 class Login extends Component {
+
     constructor(props) {
         super(props);
         this.state = {
@@ -20,6 +21,10 @@ class Login extends Component {
         }
 
         autoBind(this);
+    }
+
+    componentWillUnmount() {
+        removeSession(TOKEN);
     }
 
     phoneHandle(e) {
@@ -42,10 +47,10 @@ class Login extends Component {
         let {phone, password} = this.state.username;
         login(phone, password)
             .then(user => {
-                console.log(user);
-                if (user.value === 0) {
-                    dispatch(userActions.login(user.message));
-                    setInSession(TOKEN,user.message);
+                console.log(user.value);
+                if (user.response === true) {
+                    dispatch(userActions.login(user.value));
+                    setInSession(TOKEN,user.value);
                     history.push('/');
                 } else {
                     dispatch(show_notification("dang nhap sai ten hoac mat khau"));
@@ -55,6 +60,7 @@ class Login extends Component {
     }
 
     render() {
+
         return (
             <div className="sufee-login d-flex align-content-center flex-wrap">
                 <div className="container">
