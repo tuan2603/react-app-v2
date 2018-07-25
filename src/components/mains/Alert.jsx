@@ -1,4 +1,5 @@
 import React from 'react';
+import {connect} from 'react-redux';
 
 class Alert extends React.Component {
     render() {
@@ -15,5 +16,6 @@ class Alert extends React.Component {
         );
     }
 }
+const connectedApp = connect()(Alert);
+export {connectedApp as Alert};
 
-export default Alert;

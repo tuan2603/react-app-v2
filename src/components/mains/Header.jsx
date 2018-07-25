@@ -1,4 +1,5 @@
 import React from 'react';
+import {connect} from 'react-redux';
 import {NavLink} from 'react-router-dom';
 
 class Header extends React.Component {
@@ -111,7 +112,7 @@ class Header extends React.Component {
 
                                     <NavLink className="nav-link" to="#"><i className="fa fa -cog"></i>Settings</NavLink>
 
-                                    <NavLink className="nav-link" to="#"><i className="fa fa-power -off"></i>Logout</NavLink>
+                                    <NavLink className="nav-link" to='/page-login.html'><i className="fa fa-power -off"></i>Logout</NavLink>
                                 </div>
                             </div>
 
@@ -142,5 +143,5 @@ class Header extends React.Component {
         );
     }
 }
-
-export default Header;
+const connectedApp = connect()(Header);
+export {connectedApp as Header};

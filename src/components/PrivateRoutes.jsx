@@ -11,7 +11,7 @@ export const PrivateRoutes = ({ component: Component, ...rest }) => (
             console.log(store.getState());
           return  (
                 getFromSession(TOKEN) === null ?
-                    <Redirect to={{pathname: '/page-login.html', state: {from: props.location}}}/>
+                    <Redirect to={'/page-login.html'}/>
                     : <Component {...props} />
             )
         }

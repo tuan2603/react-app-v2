@@ -1,13 +1,13 @@
 import * as types from '../constants/ActionTypes';
 
-export function login(username) {
+export function alogin(username) {
     return {
         type: types.LOG_IN,
         username
     };
 }
 
-export function logout() {
+export function alogout() {
     return {
         type: types.LOG_OUT,
     };

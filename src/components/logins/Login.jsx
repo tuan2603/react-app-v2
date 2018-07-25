@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import Logo from '../../assets/img/logo.png';
 import {connect} from 'react-redux';
-import * as userActions from '../../actions/userActions';
+import {alogin,alogout} from '../../actions/userActions';
 import {show_notification} from '../../actions/notifyActions';
 import {TOKEN} from '../../constants/Users';
-import {login, history} from '../../helpers';
+import {login, history } from '../../helpers';
 import autoBind from 'react-autobind';
 import { setInSession,removeSession } from '../../utils';
 
@@ -12,6 +12,11 @@ class Login extends Component {
 
     constructor(props) {
         super(props);
+
+        // reset login status
+        this.props.dispatch(alogout());
+        removeSession(TOKEN);
+
         this.state = {
             username: {
                 phone: "",
@@ -19,12 +24,7 @@ class Login extends Component {
             },
             submitted: false
         }
-
         autoBind(this);
-    }
-
-    componentWillUnmount() {
-        removeSession(TOKEN);
     }
 
     phoneHandle(e) {
@@ -47,20 +47,20 @@ class Login extends Component {
         let {phone, password} = this.state.username;
         login(phone, password)
             .then(user => {
-                console.log(user.value);
                 if (user.response === true) {
-                    dispatch(userActions.login(user.value));
+                    dispatch(alogin(user.value));
                     setInSession(TOKEN,user.value);
                     history.push('/');
+                    dispatch(show_notification({txt:"Đăng nhập thành công",type:"suc"}));
                 } else {
-                    dispatch(show_notification("dang nhap sai ten hoac mat khau"));
+                    dispatch(show_notification({txt:user.value,type:"err"}));
                 }
             });
-
     }
 
     render() {
-
+        const { username, submitted, password } = this.state;
+        const { loggingIn } = this.props;
         return (
             <div className="sufee-login d-flex align-content-center flex-wrap">
                 <div className="container">
@@ -72,21 +72,27 @@ class Login extends Component {
                         </div>
                         <div className="login-form">
                             <form>
-                                <div className="form-group">
+                                <div className={"form-group" + (submitted && !username ? ' has-error' : '')}>
                                     <label>Số điện thoại</label>
                                     <input type="email"
                                            className="form-control"
                                            placeholder="phone"
                                            onChange={this.phoneHandle}
                                     />
+                                    {submitted && !username &&
+                                    <div className="help-block">Username is required</div>
+                                    }
                                 </div>
-                                <div className="form-group">
+                                <div className={'form-group' + (submitted && !password ? ' has-error' : '')}>
                                     <label>Mật khẩu</label>
                                     <input type="password"
                                            className="form-control"
                                            placeholder="password"
                                            onChange={this.passwordHandle}
                                     />
+                                    {submitted && !password &&
+                                        <div className="help-block">Password is required</div>
+                                    }
                                 </div>
                                 <button type="submit"
                                         className="btn btn-success btn-flat m-b-30 m-t-30"
@@ -94,6 +100,9 @@ class Login extends Component {
                                 >
                                     Đăng nhập
                                 </button>
+                                {loggingIn &&
+                                <img src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA=="  alt={"login"}/>
+                                }
                             </form>
                         </div>
                     </div>
@@ -105,7 +114,8 @@ class Login extends Component {
 
 let mapStateToProps = (state) => {
     return {
-        menu: state.userReducers
+        loggingIn: state.userReducers,
+        notification: state.notifyReducers
     };
 };
 const connectedApp = connect(mapStateToProps)(Login);

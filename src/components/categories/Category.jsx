@@ -1,8 +1,9 @@
 import React from 'react';
-import {SidebarLeft, Header,  Breadcrumbs, Content} from '../mains';
-import {connect} from 'react-redux';
+import {SidebarLeft, Breadcrumbs, Header } from '../mains';
+import {CategoryDetail } from '../categories';
 
-class Main extends React.Component {
+
+class Category extends React.Component {
     render() {
         return (
             <div className="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
@@ -10,12 +11,12 @@ class Main extends React.Component {
                 <div id="right-panel" className="right-panel">
                     <Header />
                     <Breadcrumbs />
-                    <Content />
+                    <CategoryDetail />
                 </div>
             </div>
         );
     }
 }
 
-const connectedApp = connect()(Main);
-export { connectedApp as Main };
+const connectedApp = (Category);
+export { connectedApp as Category };

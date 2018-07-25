@@ -1,17 +1,16 @@
 import React from 'react';
-import Alert from './Alert';
-import MemberOnline from './MemberOnlineChart';
-import Socials from './Socials';
+import {connect} from 'react-redux';
+import {Alert,MemberOnlineChart,Socials} from '../mains';
 
 class Content extends React.Component {
     render() {
         return (
             <div className="content mt-3">
                 < Alert/>
-                <MemberOnline bg={'bg-flat-color-1'}/>
-                <MemberOnline bg={'bg-flat-color-2'}/>
-                <MemberOnline bg={'bg-flat-color-3'}/>
-                <MemberOnline bg={'bg-flat-color-4'}/>
+                <MemberOnlineChart bg={'bg-flat-color-1'}/>
+                <MemberOnlineChart bg={'bg-flat-color-2'}/>
+                <MemberOnlineChart bg={'bg-flat-color-3'}/>
+                <MemberOnlineChart bg={'bg-flat-color-4'}/>
                 <Socials map={0} icon={"fa-facebook"} social={"facebook"}/>
                 <Socials map={1} icon={"fa-twitter"} social={"twitter"}/>
                 <Socials map={2} icon={"fa-linkedin"} social={"linkedin"}/>
@@ -21,5 +20,6 @@ class Content extends React.Component {
     }
 }
 
+const connectedApp = connect()(Content);
+export {connectedApp as Content};
 
-export default Content;

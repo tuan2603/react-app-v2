@@ -1,4 +1,5 @@
 import React from 'react';
+import {connect} from 'react-redux';
 
 class Breadcrumbs extends React.Component {
     render() {
@@ -24,5 +25,6 @@ class Breadcrumbs extends React.Component {
         );
     }
 }
+const connectedApp = connect()(Breadcrumbs);
+export {connectedApp as Breadcrumbs};
 
-export default Breadcrumbs;

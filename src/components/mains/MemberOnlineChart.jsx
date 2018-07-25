@@ -1,4 +1,5 @@
 import React from 'react';
+import {connect} from 'react-redux';
 import {Line} from 'react-chartjs-2';
 import classnames from 'classnames';
 // Card Chart 1
@@ -102,4 +103,5 @@ class MemberOnlineChart extends React.Component {
     }
 }
 
-export default MemberOnlineChart;
+const connectedApp = connect()(MemberOnlineChart);
+export {connectedApp as MemberOnlineChart};

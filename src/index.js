@@ -2,7 +2,6 @@ import React from 'react';
 import {render} from 'react-dom';
 import $ from 'jquery';
 import { Provider } from 'react-redux';
-
 import { store } from './helpers';
 import {App} from './containers';
 
@@ -40,6 +39,5 @@ render(
                 }
             });
         });
-
     }
 );

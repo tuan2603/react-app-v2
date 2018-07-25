@@ -1,9 +1,9 @@
 import * as types from '../constants/ActionTypes';
 
-export function show_notification(txt) {
+export function show_notification(notification) {
     return {
         type: types.SHOW_NOTIFICATION,
-        txt
+        notification
     };
 }
 

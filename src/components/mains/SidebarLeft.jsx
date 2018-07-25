@@ -1,4 +1,5 @@
 import React from 'react';
+import {connect} from 'react-redux';
 import {NavLink} from 'react-router-dom';
 import logo from '../../assets/img/brand/logo.png'
 import sygnet from '../../assets/img/brand/sygnet.png'
@@ -21,7 +22,7 @@ class SidebarLeft extends React.Component {
                     <div id="main-menu" className="main-menu collapse navbar-collapse">
                         <ul className="nav navbar-nav">
                             <li className="active">
-                                <a href="/"> <i className="menu-icon fa fa-dashboard"></i>Dashboard </a>
+                                <a href="/page-categories.html"> <i className="menu-icon fa ti-align-justify"></i> Danh Mục </a>
                             </li>
                             <h3 className="menu-title">UI elements</h3>
                             <li className="menu-item-has-children dropdown">
@@ -125,5 +126,5 @@ class SidebarLeft extends React.Component {
         );
     }
 }
-
-export default SidebarLeft;
+const connectedApp = connect()(SidebarLeft);
+export { connectedApp as SidebarLeft };
