@@ -1,11 +1,16 @@
-import React from 'react';
-const EmptyLayout = ({ children, ...restProps }) => (
-        <main className="sufee-login d-flex align-content-center flex-wrap"
-              {...restProps}
-        >
-            {children}
+import React, {Component} from 'react';
 
-    </main>
-);
+class EmptyLayout extends Component {
+    render() {
+        const {children} = this.props;
+        return (
+            <div className="sufee-login d-flex align-content-center flex-wrap">
+
+                {children}
+
+            </div>
+        );
+    }
+}
 
 export default EmptyLayout;

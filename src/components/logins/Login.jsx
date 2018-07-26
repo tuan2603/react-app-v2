@@ -7,14 +7,13 @@ import {show_notification} from '../../actions/notifyActions';
 import {TOKEN} from '../../constants/Users';
 import {login} from '../../helpers';
 import autoBind from 'react-autobind';
-import {setInSession, removeSession} from '../../utils';
+import {setInSession, removeSession, getFromSession} from '../../utils';
 
 class Login extends Component {
     constructor(props) {
         super(props);
         // reset login status
-        this.props.dispatch(alogout());
-        removeSession(TOKEN);
+
 
         this.state = {
             username: {
@@ -25,6 +24,13 @@ class Login extends Component {
             redirectToReferrer: false,
         }
         autoBind(this);
+    }
+
+    componentDidMount(){
+      if(getFromSession(TOKEN) != null )  {
+          this.props.dispatch(alogout());
+          removeSession(TOKEN);
+      }
     }
 
     phoneHandle(e) {
@@ -66,6 +72,7 @@ class Login extends Component {
             return <Redirect to={from}/>;
         }
         return (
+
             <div className="container">
                 <div className="login-content">
                     <div className="login-logo">
