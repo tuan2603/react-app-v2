@@ -1,8 +1,7 @@
 import React from 'react';
-import {connect} from 'react-redux';
 import {NavLink} from 'react-router-dom';
-import logo from '../../assets/img/brand/logo.png'
-import sygnet from '../../assets/img/brand/sygnet.png'
+import logo from '../assets/img/brand/logo.png'
+import sygnet from '../assets/img/brand/sygnet.png'
 
 class SidebarLeft extends React.Component {
     render() {
@@ -15,14 +14,17 @@ class SidebarLeft extends React.Component {
                                 aria-label="Toggle navigation">
                             <i className="fa fa-bars"></i>
                         </button>
-                        <a className="navbar-brand" href=".."><img src={logo} alt="Logo"/></a>
-                        <a className="navbar-brand hidden" href=".."><img src={sygnet} alt="Logo"/></a>
+                        <a className="navbar-brand" href=""><img src={logo} alt="Logo"/></a>
+                        <a className="navbar-brand hidden" href=""><img src={sygnet} alt="Logo"/></a>
                     </div>
 
                     <div id="main-menu" className="main-menu collapse navbar-collapse">
                         <ul className="nav navbar-nav">
                             <li className="active">
                                 <a href="/page-categories.html"> <i className="menu-icon fa ti-align-justify"></i> Danh Mục </a>
+                            </li>
+                            <li className="active">
+                                <a href="/page-users.html"> <i className="menu-icon fa ti-align-justify"></i> Danh Mục </a>
                             </li>
                             <h3 className="menu-title">UI elements</h3>
                             <li className="menu-item-has-children dropdown">
@@ -126,5 +128,5 @@ class SidebarLeft extends React.Component {
         );
     }
 }
-const connectedApp = connect()(SidebarLeft);
-export { connectedApp as SidebarLeft };
+
+export default SidebarLeft;

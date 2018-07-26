@@ -2,825 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b04c2cd9-7e95-42a0-b70f-ee467a9bacf3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/listActions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/notifyActions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/userActions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/logins/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/mains/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constants/ActionTypes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constants/Users.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/backend.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/history.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/store.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/listReducers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/notifyReducers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/rootReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/toggletReducers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/userReducers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/SessionStore.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/config.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/EmptyLayout.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/LayoutRoute.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/MainLayout.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Routes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/scss/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Alert.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mains/Alert.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Breadcrumbs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mains/Breadcrumbs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mains/Content.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mains/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/logins/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mains/Main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MemberOnlineChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mains/MemberOnlineChart.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SidebarLeft.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mains/SidebarLeft.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Socials.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mains/Socials.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/views/sufee.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PrivateRoutes.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/admin.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/avatar/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/avatar/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/avatar/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/avatar/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/avatar/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/avatar/6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flag/du.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flag/es.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flag/fr.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flag/it.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flag/us.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ad.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ae.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/af.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ag.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ai.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/al.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/am.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ao.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/aq.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ar.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/as.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/at.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/au.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/aw.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ax.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/az.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ba.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/bb.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/bd.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/be.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/bf.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/bg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/bh.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/bi.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/bj.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/bl.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/bm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/bn.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/bo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/bq.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/br.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/bs.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/bt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/bv.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/bw.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/by.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/bz.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ca.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/cc.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/cd.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/cf.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/cg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ch.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ci.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ck.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/cl.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/cm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/cn.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/co.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/cr.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/cu.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/cv.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/cw.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/cx.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/cy.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/cz.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/de.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/dj.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/dk.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/dm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/do.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/dz.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ec.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ee.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/eg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/eh.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/er.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/es-ct.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/es.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/et.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/eu.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/fi.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/fj.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/fk.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/fm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/fo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/fr.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ga.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/gb-eng.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/gb-nir.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/gb-sct.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/gb-wls.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/gb.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/gd.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ge.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/gf.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/gg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/gh.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/gi.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/gl.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/gm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/gn.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/gp.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/gq.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/gr.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/gs.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/gt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/gu.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/gw.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/gy.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/hk.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/hm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/hn.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/hr.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ht.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/hu.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/id.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ie.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/il.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/im.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/in.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/io.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/iq.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ir.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/is.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/it.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/je.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/jm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/jo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/jp.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ke.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/kg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/kh.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ki.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/km.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/kn.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/kp.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/kr.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/kw.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ky.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/kz.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/la.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/lb.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/lc.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/li.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/lk.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/lr.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ls.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/lt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/lu.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/lv.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ly.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ma.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/mc.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/md.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/me.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/mf.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/mg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/mh.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/mk.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ml.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/mm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/mn.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/mo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/mp.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/mq.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/mr.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ms.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/mt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/mu.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/mv.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/mw.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/mx.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/my.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/mz.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/na.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/nc.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ne.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/nf.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ng.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ni.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/nl.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/no.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/np.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/nr.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/nu.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/nz.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/om.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/pa.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/pe.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/pf.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/pg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ph.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/pk.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/pl.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/pm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/pn.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/pr.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ps.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/pt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/pw.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/py.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/qa.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/re.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ro.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/rs.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ru.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/rw.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/sa.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/sb.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/sc.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/sd.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/se.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/sg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/sh.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/si.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/sj.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/sk.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/sl.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/sm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/sn.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/so.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/sr.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ss.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/st.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/sv.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/sx.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/sy.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/sz.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/tc.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/td.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/tf.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/tg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/th.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/tj.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/tk.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/tl.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/tm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/tn.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/to.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/tr.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/tt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/tv.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/tw.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/tz.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ua.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ug.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/um.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/un.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/us.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/uy.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/uz.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/va.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/vc.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ve.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/vg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/vi.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/vn.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/vu.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/wf.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ws.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/ye.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/yt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/za.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/zm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/1x1/zw.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ad.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ae.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/af.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ag.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ai.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/al.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/am.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ao.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/aq.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ar.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/as.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/at.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/au.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/aw.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ax.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/az.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ba.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/bb.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/bd.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/be.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/bf.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/bg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/bh.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/bi.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/bj.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/bl.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/bm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/bn.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/bo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/bq.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/br.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/bs.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/bt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/bv.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/bw.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/by.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/bz.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ca.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/cc.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/cd.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/cf.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/cg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ch.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ci.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ck.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/cl.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/cm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/cn.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/co.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/cr.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/cu.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/cv.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/cw.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/cx.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/cy.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/cz.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/de.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/dj.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/dk.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/dm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/do.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/dz.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ec.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ee.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/eg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/eh.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/er.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/es-ct.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/es.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/et.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/eu.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/fi.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/fj.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/fk.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/fm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/fo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/fr.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ga.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/gb-eng.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/gb-nir.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/gb-sct.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/gb-wls.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/gb.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/gd.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ge.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/gf.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/gg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/gh.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/gi.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/gl.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/gm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/gn.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/gp.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/gq.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/gr.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/gs.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/gt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/gu.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/gw.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/gy.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/hk.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/hm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/hn.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/hr.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ht.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/hu.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/id.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ie.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/il.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/im.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/in.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/io.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/iq.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ir.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/is.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/it.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/je.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/jm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/jo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/jp.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ke.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/kg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/kh.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ki.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/km.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/kn.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/kp.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/kr.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/kw.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ky.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/kz.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/la.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/lb.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/lc.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/li.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/lk.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/lr.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ls.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/lt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/lu.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/lv.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ly.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ma.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/mc.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/md.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/me.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/mf.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/mg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/mh.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/mk.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ml.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/mm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/mn.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/mo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/mp.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/mq.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/mr.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ms.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/mt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/mu.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/mv.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/mw.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/mx.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/my.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/mz.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/na.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/nc.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ne.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/nf.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ng.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ni.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/nl.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/no.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/np.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/nr.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/nu.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/nz.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/om.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/pa.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/pe.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/pf.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/pg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ph.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/pk.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/pl.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/pm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/pn.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/pr.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ps.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/pt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/pw.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/py.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/qa.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/re.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ro.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/rs.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ru.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/rw.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/sa.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/sb.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/sc.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/sd.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/se.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/sg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/sh.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/si.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/sj.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/sk.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/sl.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/sm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/sn.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/so.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/sr.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ss.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/st.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/sv.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/sx.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/sy.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/sz.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/tc.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/td.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/tf.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/tg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/th.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/tj.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/tk.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/tl.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/tm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/tn.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/to.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/tr.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/tt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/tv.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/tw.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/tz.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ua.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ug.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/um.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/un.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/us.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/uy.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/uz.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/va.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/vc.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ve.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/vg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/vi.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/vn.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/vu.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/wf.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ws.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/ye.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/yt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/za.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/zm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/4x3/zw.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ad.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ae.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/af.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ag.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ai.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/al.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/am.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ao.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/aq.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ar.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/as.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/at.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/au.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/aw.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ax.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/az.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ba.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/bb.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/bd.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/be.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/bf.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/bg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/bh.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/bi.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/bj.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/bl.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/bm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/bn.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/bo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/bq.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/br.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/bs.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/bt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/bv.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/bw.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/by.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/bz.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ca.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/cc.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/cd.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/cf.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/cg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ch.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ci.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ck.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/cl.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/cm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/cn.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/co.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/cr.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/cu.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/cv.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/cw.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/cx.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/cy.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/cz.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/de.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/dj.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/dk.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/dm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/do.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/dz.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ec.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ee.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/eg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/eh.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/er.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/es.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/et.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/fi.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/fj.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/fk.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/fm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/fo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/fr.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ga.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/gb.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/gd.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ge.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/gf.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/gg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/gh.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/gi.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/gl.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/gm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/gn.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/gp.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/gq.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/gr.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/gs.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/gt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/gu.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/gw.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/gy.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/hk.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/hm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/hn.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/hr.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ht.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/hu.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/id.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ie.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/il.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/im.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/in.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/io.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/iq.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ir.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/is.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/it.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/je.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/jm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/jo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/jp.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ke.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/kg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/kh.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ki.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/km.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/kn.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/kp.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/kr.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/kw.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ky.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/kz.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/la.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/lb.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/lc.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/li.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/lk.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/lr.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ls.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/lt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/lu.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/lv.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ly.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ma.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/mc.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/md.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/me.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/mf.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/mg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/mh.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/mk.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ml.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/mm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/mn.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/mo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/mp.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/mq.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/mr.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ms.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/mt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/mu.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/mv.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/mw.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/mx.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/my.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/mz.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/na.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/nc.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ne.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/nf.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ng.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ni.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/nl.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/no.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/np.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/nr.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/nu.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/nz.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/om.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/pa.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/pe.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/pf.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/pg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ph.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/pk.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/pl.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/pm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/pn.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/pr.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ps.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/pt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/pw.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/py.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/qa.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/re.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ro.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/rs.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ru.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/rw.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/sa.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/sb.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/sc.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/sd.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/se.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/sg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/sh.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/si.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/sj.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/sk.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/sl.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/sm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/sn.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/so.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/sr.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ss.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/st.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/sv.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/sx.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/sy.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/sz.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/tc.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/td.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/tf.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/tg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/th.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/tj.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/tk.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/tl.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/tm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/tn.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/to.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/tr.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/tt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/tv.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/tw.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/tz.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ua.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ug.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/um.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/us.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/uy.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/uz.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/va.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/vc.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ve.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/vg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/vi.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/vn.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/vu.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/wf.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ws.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/ye.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/yt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/za.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/zm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/flags/zw.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/logo2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/placeholder.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/twitter_corner_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/twitter_corner_blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PrivateRoutes.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/categories/Category.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/categories/CategoryDetail.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/categories/Categories.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/categories/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/categories/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/logins/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/logins/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/logins/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/logins/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mains/Alert.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Alert.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mains/Breadcrumbs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Breadcrumbs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mains/Content.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mains/Header.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mains/Main.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mains/MemberOnlineChart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MemberOnlineChart.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mains/SidebarLeft.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SidebarLeft.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mains/Socials.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Socials.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mains/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -833,99 +39,133 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Login.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/logins/Login.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="47" column="38" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/helpers/index.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="App.jsx" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/containers/App.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="history.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/helpers/history.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="45" selection-start-column="38" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PrivateRoutes.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/PrivateRoutes.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActionTypes.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/constants/ActionTypes.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Users.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/constants/Users.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="18" selection-start-column="13" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="userActions.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/actions/userActions.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="userReducers.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/reducers/userReducers.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="34" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="listReducers.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/reducers/listReducers.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.83886254">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="MainLayout.jsx" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/layout/MainLayout.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="340">
+                  <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Socials.jsx" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/Socials.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="433">
+                  <caret line="97" column="22" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="34">
+                  <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="App.jsx" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/containers/App.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="195">
+                  <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+                  <folding>
+                    <element signature="e#0#39#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Header.jsx" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/Header.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="17">
+                  <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="SidebarLeft.jsx" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/SidebarLeft.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="391">
+                  <caret line="26" column="52" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/layout/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="34">
+                  <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="EmptyLayout.jsx" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/layout/EmptyLayout.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="85">
+                  <caret line="5" selection-start-line="5" selection-end-line="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/containers/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret column="35" lean-forward="true" selection-start-column="35" selection-end-column="35" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MemberOnlineChart.jsx" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/MemberOnlineChart.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="481">
+                  <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="LayoutRoute.jsx" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/layout/LayoutRoute.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="204">
+                  <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -949,6 +189,10 @@
       <find>#</find>
       <find>href=&quot;#&quot;</find>
       <find>twitter_corner_black.png</find>
+      <find>console.log(store.getState());</find>
+      <find>NavLink</find>
+      <find>loggingIn</find>
+      <find>Link</find>
     </findStrings>
     <replaceStrings>
       <replace>'#63c2de'</replace>
@@ -956,6 +200,8 @@
       <replace>NavLink&gt;</replace>
       <replace>to</replace>
       <replace>to=&quot;/&quot;</replace>
+      <replace>Link</replace>
+      <replace>NavLink</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -964,7 +210,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/containers/App.js" />
         <option value="$PROJECT_DIR$/src/components/views/sufee.js" />
@@ -977,11 +222,7 @@
         <option value="$PROJECT_DIR$/src/components/SidebarLeft.js" />
         <option value="$PROJECT_DIR$/src/Routes.js" />
         <option value="$PROJECT_DIR$/src/components/Login.js" />
-        <option value="$PROJECT_DIR$/src/components/index.js" />
-        <option value="$PROJECT_DIR$/src/containers/index.js" />
         <option value="$PROJECT_DIR$/src/components/Content.js" />
-        <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/components/logins/index.js" />
         <option value="$PROJECT_DIR$/src/components/mains/index.js" />
         <option value="$PROJECT_DIR$/src/components/mains/Main.jsx" />
         <option value="$PROJECT_DIR$/src/assets/scss/style.scss" />
@@ -989,15 +230,37 @@
         <option value="$PROJECT_DIR$/src/components/mains/SidebarLeft.jsx" />
         <option value="$PROJECT_DIR$/src/utils/SessionStore.jsx" />
         <option value="$PROJECT_DIR$/src/utils/index.js" />
-        <option value="$PROJECT_DIR$/src/helpers/backend.jsx" />
         <option value="$PROJECT_DIR$/src/utils/config.jsx" />
         <option value="$PROJECT_DIR$/src/reducers/userReducers.js" />
         <option value="$PROJECT_DIR$/src/helpers/history.jsx" />
         <option value="$PROJECT_DIR$/src/helpers/index.js" />
         <option value="$PROJECT_DIR$/src/constants/Users.js" />
-        <option value="$PROJECT_DIR$/src/components/logins/Login.jsx" />
+        <option value="$PROJECT_DIR$/src/helpers/backend.jsx" />
         <option value="$PROJECT_DIR$/src/components/PrivateRoutes.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Layout/PrivateRoutes.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Layout/index.js" />
+        <option value="$PROJECT_DIR$/src/components/mains/Header.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Layout/LayoutRoute.jsx" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/components/categories/Categories.jsx" />
+        <option value="$PROJECT_DIR$/src/components/logins/Login.jsx" />
+        <option value="$PROJECT_DIR$/src/components/logins/index.js" />
+        <option value="$PROJECT_DIR$/src/components/categories/index.js" />
+        <option value="$PROJECT_DIR$/src/components/Layout/EmptyLayout.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Layout/MainLayout.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Alert.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Breadcrumbs.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Content.jsx" />
+        <option value="$PROJECT_DIR$/src/components/MemberOnlineChart.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Socials.jsx" />
+        <option value="$PROJECT_DIR$/src/containers/index.js" />
+        <option value="$PROJECT_DIR$/src/components/layout/index.js" />
+        <option value="$PROJECT_DIR$/src/components/index.js" />
+        <option value="$PROJECT_DIR$/src/components/layout/LayoutRoute.jsx" />
         <option value="$PROJECT_DIR$/src/containers/App.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Header.jsx" />
+        <option value="$PROJECT_DIR$/src/components/SidebarLeft.jsx" />
+        <option value="$PROJECT_DIR$/src/components/layout/EmptyLayout.jsx" />
       </list>
     </option>
   </component>
@@ -1018,16 +281,17 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="78" />
-    <option name="y" value="152" />
-    <option name="width" value="1311" />
-    <option name="height" value="630" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1456" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1038,18 +302,7 @@
             <path>
               <item name="react-app-v2" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-app-v2" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-app-v2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-app-v2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-app-v2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-app-v2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="actions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react-app-v2" type="b2602c69:ProjectViewProjectNode" />
@@ -1062,20 +315,7 @@
               <item name="react-app-v2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="logins" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-app-v2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-app-v2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="mains" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-app-v2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-app-v2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="constants" type="462c0819:PsiDirectoryNode" />
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react-app-v2" type="b2602c69:ProjectViewProjectNode" />
@@ -1083,29 +323,10 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="containers" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="react-app-v2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-app-v2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="helpers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-app-v2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-app-v2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="reducers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-app-v2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-app-v2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1120,17 +341,18 @@
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\nodeproject\react-app-v2\src\components" />
+      <recent name="D:\nodeproject\react-app-v2\src\components\Layout" />
+      <recent name="D:\GITHUP\react-app-v2\src\components\mains" />
+      <recent name="D:\nodeproject\react-app-v2\src\containers" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\GITHUP\react-app-v2\src\components\logins" />
       <recent name="D:\GITHUP\react-app-v2\src" />
       <recent name="D:\nodeproject\react-app-v2\src\components" />
       <recent name="D:\GITHUP\react-app-v2\public" />
       <recent name="D:\GITHUP\react-app-v2" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\GITHUP\react-app-v2\src\components\mains" />
-      <recent name="D:\nodeproject\react-app-v2\src\components" />
-      <recent name="D:\nodeproject\react-app-v2\src\containers" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1158,29 +380,30 @@
       <workItem from="1531921852612" duration="8621000" />
       <workItem from="1532416360373" duration="12502000" />
       <workItem from="1532441159453" duration="10798000" />
+      <workItem from="1532481221921" duration="5695000" />
+      <workItem from="1532568489099" duration="16459000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31921000" />
+    <option name="totallyTimeSpent" value="54075000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24925596" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25599435" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50074404" side_tool="true" weight="0.3565365" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50074404" side_tool="true" weight="0.3565365" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37309292" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.37351444" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49925596" visible="true" weight="0.26825127" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49925596" visible="true" weight="0.1442441" />
+      <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="TypeScript" order="7" />
+      <window_info anchor="bottom" id="TypeScript" order="9" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -1204,12 +427,12 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/mains/Main.jsx</url>
+          <url>file://$PROJECT_DIR$/src/components/Main.jsx</url>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/mains/SidebarLeft.jsx</url>
-          <line>8</line>
+          <url>file://$PROJECT_DIR$/src/components/SidebarLeft.jsx</url>
+          <line>9</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -1218,17 +441,27 @@
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/mains/Socials.jsx</url>
+          <url>file://$PROJECT_DIR$/src/components/Socials.jsx</url>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/containers/App.jsx</url>
           <line>20</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/Breadcrumbs.jsx</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/Breadcrumbs.jsx</url>
+          <line>25</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="11" />
+      <option name="time" value="15" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -1239,16 +472,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Routes.js" />
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -1259,18 +483,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/views/sufee.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10523">
-          <caret line="622" column="21" lean-forward="true" selection-start-line="622" selection-start-column="21" selection-end-line="622" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#21560#31451#0" />
-            <element signature="e#31473#32352#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/views/sufee.js" />
     <entry file="file://$PROJECT_DIR$/src/assets/js/lib/vector-map/jquery.vmap.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-102" />
@@ -1278,11 +491,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/js/lib/chart-js/Chart.bundle.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-269323">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-269323" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/js/lib/vector-map/jquery.vmap.sampledata.js">
@@ -1312,20 +521,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/mains/Breadcrumbs.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/mains/Alert.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1333,68 +528,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/mains/MemberOnlineChart.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="85" column="72" selection-start-line="85" selection-start-column="72" selection-end-line="85" selection-end-column="72" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/mains/Socials.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="76" column="75" selection-start-line="76" selection-start-column="69" selection-end-line="76" selection-end-column="75" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/views/sufee.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12954">
-          <caret line="916" column="63" selection-start-line="916" selection-start-column="55" selection-end-line="916" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#21560#31451#0" />
-            <element signature="e#31473#32352#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/mains/Header.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="118" column="40" selection-start-line="118" selection-start-column="40" selection-end-line="118" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/views/sufee.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/Login.js" />
+    <entry file="file://$PROJECT_DIR$/src/Routes.js" />
     <entry file="file://$PROJECT_DIR$/src/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1402,67 +538,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/mains/Content.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/mains/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/logins/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/mains/Main.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/logo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/layout/index.js" />
     <entry file="file://$PROJECT_DIR$/src/assets/scss/style.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -1477,137 +553,196 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/mains/SidebarLeft.jsx">
+    <entry file="file://$PROJECT_DIR$/src/utils/index.js" />
+    <entry file="file://$PROJECT_DIR$/src/helpers/store.jsx" />
+    <entry file="file://$PROJECT_DIR$/src/utils/SessionStore.jsx" />
+    <entry file="file://$PROJECT_DIR$/src/utils/config.jsx" />
+    <entry file="file://$PROJECT_DIR$/src/reducers/rootReducer.js" />
+    <entry file="file://$PROJECT_DIR$/src/actions/userActions.js" />
+    <entry file="file://$PROJECT_DIR$/src/reducers/userReducers.js" />
+    <entry file="file://$PROJECT_DIR$/src/constants/ActionTypes.js" />
+    <entry file="file://$PROJECT_DIR$/src/constants/Users.js" />
+    <entry file="file://$PROJECT_DIR$/src/helpers/backend.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1403">
-          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+        <state relative-caret-position="153">
+          <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/helpers/history.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/categories/Category.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/notifyActions.js">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-94">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/index.js">
+    <entry file="file://$PROJECT_DIR$/src/components/categories/Categories.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="39" selection-start-column="39" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/logins/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/categories/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="31" lean-forward="true" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/helpers/backend.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/helpers/store.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="6" selection-start-line="4" selection-end-line="4" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/listActions.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/SessionStore.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="38" column="34" lean-forward="true" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/config.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="50" lean-forward="true" selection-start-column="50" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/rootReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/notifyReducers.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/listReducers.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/userActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/userReducers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/helpers/history.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="45" selection-start-column="38" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/constants/ActionTypes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/constants/Users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" selection-start-column="13" selection-end-column="18" />
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/logins/Login.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="47" column="38" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
+        <state relative-caret-position="204">
+          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/PrivateRoutes.jsx">
+    <entry file="file://$PROJECT_DIR$/src/components/Breadcrumbs.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        <state relative-caret-position="425">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Content.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/helpers/index.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Alert.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Main.jsx">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/MemberOnlineChart.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Socials.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="97" column="22" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/layout/MainLayout.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/layout/LayoutRoute.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Header.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/layout/EmptyLayout.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/layout/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/SidebarLeft.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="26" column="52" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="35" lean-forward="true" selection-start-column="35" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/App.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+        <state relative-caret-position="195">
+          <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>

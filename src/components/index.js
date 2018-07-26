@@ -1,1 +1,6 @@
-export * from './PrivateRoutes.jsx'
+export { default as Alert } from './Alert';
+export { default as Breadcrumbs } from './Breadcrumbs';
+export { default as Header } from './Header';
+export { default as MemberOnlineChart } from './MemberOnlineChart';
+export { default as SidebarLeft } from './SidebarLeft';
+export { default as Socials } from './Socials';

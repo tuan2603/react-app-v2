@@ -1,5 +1,5 @@
-import React from 'react';
-class CategoryDetail extends React.Component {
+import React, {Component} from 'react';
+class Categories extends Component {
     render() {
         return (
             <div className="content mt-3">
@@ -374,5 +374,4 @@ class CategoryDetail extends React.Component {
     }
 }
 
-const connectedApp = (CategoryDetail);
-export {connectedApp as CategoryDetail};
+export default Categories;

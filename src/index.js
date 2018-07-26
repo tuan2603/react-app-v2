@@ -1,14 +1,15 @@
 import React from 'react';
 import {render} from 'react-dom';
 import $ from 'jquery';
-import { Provider } from 'react-redux';
-import { store } from './helpers';
+import {Provider} from 'react-redux';
+import {store} from './helpers';
 import {App} from './containers';
 
-render(
-    <Provider store={store}>
-        <App />
-    </Provider>,
+render((
+        <Provider store={store}>
+            <App/>
+        </Provider>
+    ),
     document.getElementById('root'),
     function () {
         $('#menuToggle').click(function () {
@@ -29,7 +30,7 @@ render(
 
         // Counter Number
         $('.count').each(function () {
-            $(this).prop('Counter',0).animate({
+            $(this).prop('Counter', 0).animate({
                 Counter: $(this).text()
             }, {
                 duration: 3000,

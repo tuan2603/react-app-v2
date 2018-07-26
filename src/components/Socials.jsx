@@ -1,5 +1,4 @@
 import React from 'react';
-import {connect} from 'react-redux';
 import {Line} from 'react-chartjs-2';
 import classnames from 'classnames';
 
@@ -96,5 +95,4 @@ class Socials extends React.Component {
     }
 }
 
-const connectedApp = connect()(Socials);
-export { connectedApp as Socials };
+export default Socials;

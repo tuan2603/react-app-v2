@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import {Router , Route} from 'react-router-dom';
-import {connect} from 'react-redux';
+import {BrowserRouter , Switch} from 'react-router-dom';
 import '../assets/css/normalize.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../assets/css/font-awesome.min.css';
@@ -10,36 +9,44 @@ import '../assets/css/lib/vector-map/jqvmap.min.css';
 import '../assets/scss/style.css';
 import 'react-toastify/dist/ReactToastify.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
-import {Login} from "../components/logins";
-import {Main} from "../components/mains";
-import {Category} from "../components/categories";
-import {PrivateRoutes} from "../components";
-import {history} from "../helpers";
+import {LayoutRoute, EmptyLayout, MainLayout} from "../components/layout";
 import { setupTimeOut} from '../utils';
-import {Notification} from '../components/notification';
+import { Categories} from '../components/categories';
+import { Login} from '../components/logins';
 
 class App extends Component {
     componentWillMount() {
         setupTimeOut();
     }
     render() {
-        const {  notification } = this.props;
         return (
-            <Router history={history}>
-                <div>
-                    {( notification !== null) && <Notification />}
-                    <PrivateRoutes exact path='/' component={Main}/>
-                    <PrivateRoutes exact path='/page-categories.html' component={Category}/>
-                    <Route exact path='/page-login.html' component={Login}/>
-                </div>
-            </Router>
+            <div>
+                <BrowserRouter>
+                    <Switch>
+                        <LayoutRoute
+                            exact
+                            path='/page-login.html'
+                            layout={EmptyLayout}
+                            component={Login}/>
+                        <LayoutRoute
+                            exact
+                            path='/'
+                            layout={MainLayout}
+                            component={Categories}/>
+                        <LayoutRoute
+                            exact
+                            path='/page-categories.html'
+                            layout={MainLayout}
+                            component={Categories}/>
+                        <LayoutRoute
+                            exact
+                            path='/page-users.html'
+                            layout={MainLayout}
+                            component={Categories}/>
+                    </Switch>
+                </BrowserRouter>
+            </div>
         );
     }
 }
-let mapStateToProps = (state) => {
-    return {
-        notification: state.notifyReducers
-    };
-};
-const connectedApp = connect(mapStateToProps)(App);
-export {connectedApp as App};
+export default App;
