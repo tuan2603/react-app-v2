@@ -15,11 +15,13 @@ import {setupTimeOut} from '../utils';
 import {Categories} from '../components/categories';
 import {Notification} from '../components/notification';
 import {Login} from '../components/logins';
+import {store} from '../helpers';
 
 
 class App extends Component {
     componentWillMount() {
         setupTimeOut();
+        console.log(store.getState());
     }
     render() {
         const {  notification } = this.props;

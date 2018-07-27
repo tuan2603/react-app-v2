@@ -1,4 +1,5 @@
 import * as config from '../utils';
+import {authHeader} from '../helpers';
 
 export function login(phone, password) {
     const configheader = {
@@ -13,10 +14,15 @@ export function login(phone, password) {
 
 }
 
-export function checklogin() {
 
-    return fetch(`/api/get-info`)
+export function getInfo() {
+    const requestOptions = {
+        method: 'GET',
+        headers: authHeader()
+    };
+
+    return fetch(`${config.apiUrl}/api/auth/get-info`, requestOptions)
         .then((response) => response.json())
         .then((responseJson) => responseJson);
-
 }
+

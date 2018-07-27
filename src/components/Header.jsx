@@ -1,8 +1,33 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-
+import {NavLink} from 'react-router-dom';
+import './Header.css';
+import $ from 'jquery';
+import {connect} from "react-redux";
+import * as config from '../utils';
 class Header extends React.Component {
+    componentDidMount() {
+
+        $('#menuToggle').click(function () {
+            $('body').toggleClass('open');
+        });
+
+        $('.search-trigger').on('click', function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+            $('.search-trigger').parent('.header-left').addClass('open');
+        });
+
+        $('.search-close').on('click', function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+            $('.search-trigger').parent('.header-left').removeClass('open');
+        });
+
+    }
+
+
     render() {
+        let {user} = this.props;
         return (
             <header id="header" className="header">
                 <div className="header-menu">
@@ -98,44 +123,27 @@ class Header extends React.Component {
                     <div className="col-sm-5">
                         <div className="user-area dropdown float-right">
                             <NavLink to="#" className="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                                  aria-expanded="false">
-                                <img className="user-avatar rounded-circle" src="images/admin.jpg"
-                                     alt="User Avatar"/>
+                                     aria-expanded="false">
+
+                                { user && (<img className="user-avatar rounded-circle" src={config.apiUrl+"/uploads/"+user.phone+"/"+user.linkAvatar}
+                                                alt={user.fullName}/>)}
+
                             </NavLink>
 
                             <div className="user-menu dropdown-menu">
-                                <NavLink className="nav-NavLink" to="#"><i className="fa fa- user"></i>My Profile</NavLink>
+                                <NavLink className="nav-NavLink" to="#"><i className="fa fa- user"></i>My
+                                    Profile</NavLink>
 
                                 <NavLink className="nav-NavLink" to="#"><i
-                                    className="fa fa- user"></i>Notifications <span className="count">13</span></NavLink>
+                                    className="fa fa- user"></i>Notifications <span
+                                    className="count">13</span></NavLink>
 
                                 <NavLink className="nav-NavLink" to="#"><i className="fa fa -cog"></i>Settings</NavLink>
 
-                                <NavLink className="nav-NavLink" to='/page-login.html'><i className="fa fa-power -off"></i>Logout</NavLink>
+                                <NavLink className="nav-NavLink" to='/page-login.html'><i className="fa fa -cog"></i>Logout
+                                </NavLink>
                             </div>
                         </div>
-
-                        <div className="language-select dropdown" id="language-select">
-                            <NavLink className="dropdown-toggle" to="#" data-toggle="dropdown" id="language"
-                                  aria-haspopup="true" aria-expanded="true">
-                                <i className="flag-icon flag-icon-us"></i>
-                            </NavLink>
-                            <div className="dropdown-menu" aria-labelledby="language">
-                                <div className="dropdown-item">
-                                    <span className="flag-icon flag-icon-fr"></span>
-                                </div>
-                                <div className="dropdown-item">
-                                    <i className="flag-icon flag-icon-es"></i>
-                                </div>
-                                <div className="dropdown-item">
-                                    <i className="flag-icon flag-icon-us"></i>
-                                </div>
-                                <div className="dropdown-item">
-                                    <i className="flag-icon flag-icon-it"></i>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </header>
@@ -143,4 +151,10 @@ class Header extends React.Component {
     }
 }
 
-export default Header;
+let mapStateToProps = (state) => {
+    return {
+        user: state.userReducers
+    };
+};
+
+export default connect(mapStateToProps)(Header);

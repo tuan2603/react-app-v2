@@ -13,8 +13,6 @@ class Login extends Component {
     constructor(props) {
         super(props);
         // reset login status
-
-
         this.state = {
             username: {
                 phone: "",
@@ -54,12 +52,13 @@ class Login extends Component {
         login(phone, password)
             .then(user => {
                 if (user.response === true) {
-                    dispatch(alogin(user.value));
+                    let obj = {token:user.value};
+                    dispatch(alogin({username:obj}));
                     setInSession(TOKEN, user.value);
                     dispatch(show_notification({txt: "Đăng nhập thành công", type: "suc"}));
                     this.setState({redirectToReferrer: true});
                 } else {
-                    dispatch(show_notification({txt: user.value, type: "err"}));
+                    dispatch(show_notification({txt: "Tên hoặc mật khẩu không đúng", type: "err"}));
                 }
             });
     }

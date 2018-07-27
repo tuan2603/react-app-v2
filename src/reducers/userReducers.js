@@ -1,6 +1,6 @@
 import { LOG_IN , LOG_OUT} from '../constants/ActionTypes';
 
-export default function userReduces(state = null, action) {
+export default function userReduces(state = {}, action) {
     switch (action.type) {
         case LOG_IN:
             return action.username;
