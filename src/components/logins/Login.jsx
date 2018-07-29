@@ -52,8 +52,7 @@ class Login extends Component {
         login(phone, password)
             .then(user => {
                 if (user.response === true) {
-                    let obj = {token:user.value};
-                    dispatch(alogin({username:obj}));
+                    dispatch(alogin({token:user.value}));
                     setInSession(TOKEN, user.value);
                     dispatch(show_notification({txt: "Đăng nhập thành công", type: "suc"}));
                     this.setState({redirectToReferrer: true});

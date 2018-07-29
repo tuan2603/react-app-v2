@@ -27,7 +27,8 @@ class Header extends React.Component {
 
 
     render() {
-        let {user} = this.props;
+        let {username} = this.props;
+        console.log(username);
         return (
             <header id="header" className="header">
                 <div className="header-menu">
@@ -125,8 +126,8 @@ class Header extends React.Component {
                             <NavLink to="#" className="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                                      aria-expanded="false">
 
-                                { user && (<img className="user-avatar rounded-circle" src={config.apiUrl+"/uploads/"+user.phone+"/"+user.linkAvatar}
-                                                alt={user.fullName}/>)}
+                                { username && (<img className="user-avatar rounded-circle" src={config.apiUrl+"/uploads/"+username.phone+"/"+username.avatarLink}
+                                                alt={username.fullName}/>)}
 
                             </NavLink>
 
@@ -153,7 +154,7 @@ class Header extends React.Component {
 
 let mapStateToProps = (state) => {
     return {
-        user: state.userReducers
+        username: state.userReducers
     };
 };
 

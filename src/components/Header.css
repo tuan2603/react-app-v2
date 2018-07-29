@@ -2,3 +2,9 @@ a.nav-NavLink {
     display: block;
     color: white;
 }
+
+.user-avatar {
+    float: right;
+    margin-top: 4px;
+    width: 48px !important;
+}

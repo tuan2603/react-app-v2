@@ -26,7 +26,7 @@ class MainLayout extends Component {
             getInfo().then(user => {
                 console.log(user);
                 if (user.response === true) {
-                    dispatch(alogin({username:user.value}));
+                    dispatch(alogin(user.value));
                 } else {
                     dispatch(show_notification({txt: "Tên hoặc mật khẩu không đúng", type: "err"}));
                 }
