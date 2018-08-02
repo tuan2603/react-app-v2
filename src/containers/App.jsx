@@ -14,6 +14,7 @@ import {LayoutRoute, EmptyLayout, MainLayout} from "../components/layout";
 import {setupTimeOut} from '../utils';
 import {Categories} from '../components/categories';
 import {Notification} from '../components/notification';
+import {Privacy} from '../components/privacy';
 import {Login} from '../components/logins';
 import {store} from '../helpers';
 
@@ -25,16 +26,25 @@ class App extends Component {
     }
     render() {
         const {  notification } = this.props;
+
         return (
             <BrowserRouter >
             <main>
                 {( notification !== null) && <Notification />}
+
                 <Switch>
                     <LayoutRoute
                         exact
                         path='/page-login.html'
                         layout={EmptyLayout}
                         component={Login}/>
+
+                    <LayoutRoute
+                        exact
+                        path='/privacy'
+                        layout={MainLayout}
+                        component={Privacy}/>
+
                     <LayoutRoute
                         exact
                         path='/'
