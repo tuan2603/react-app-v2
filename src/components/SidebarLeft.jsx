@@ -21,10 +21,13 @@ class SidebarLeft extends React.Component {
                     <div id="main-menu" className="main-menu collapse navbar-collapse">
                         <ul className="nav navbar-nav">
                             <li className="active">
-                                <Link to="/page-categories.html"> <i className="menu-icon fa ti-align-justify"></i> Danh Mục </Link>
+                                <Link to="/termsandconditions.html">
+                                    <i className="menu-icon fa ti-align-justify"></i>
+                                    Điều kiện và Điều khoản sử dụng
+                                </Link>
                             </li>
                             <li className="active">
-                                <Link to="/page-users.html"> <i className="menu-icon fa ti-align-justify"></i> Danh Mục </Link>
+                                <Link to="/page-categories.html"> <i className="menu-icon fa ti-align-justify"></i> Danh Mục </Link>
                             </li>
                             <h3 className="menu-title">UI elements</h3>
                             <li className="menu-item-has-children dropdown">

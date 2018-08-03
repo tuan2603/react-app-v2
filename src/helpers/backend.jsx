@@ -1,5 +1,5 @@
 import * as config from '../utils';
-import {authHeader} from '../helpers';
+import {authHeader, authHeaderJSon} from '../helpers';
 
 export function login(phone, password) {
     const configheader = {
@@ -26,3 +26,25 @@ export function getInfo() {
         .then((responseJson) => responseJson);
 }
 
+export function getTemsHelper() {
+    const requestOptions = {
+        method: 'GET',
+        headers: authHeader()
+    };
+
+    return fetch(`${config.apiUrl}/api/terms`, requestOptions)
+        .then((response) => response.json())
+        .then((responseJson) => responseJson);
+}
+
+export function TemsHelper(body) {
+    const requestOptions = {
+        method: 'POST',
+        headers: authHeaderJSon(),
+        body: JSON.stringify(body),
+    };
+
+    return fetch(`${config.apiUrl}/api/terms`, requestOptions)
+        .then((response) => response.json())
+        .then((responseJson) => responseJson);
+}

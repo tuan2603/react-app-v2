@@ -41,7 +41,7 @@ class App extends Component {
 
                     <LayoutRoute
                         exact
-                        path='/privacy'
+                        path='/termsandconditions.html'
                         layout={MainLayout}
                         component={Privacy}/>
 

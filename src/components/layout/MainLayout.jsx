@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {SidebarLeft, Breadcrumbs, Header} from '../index';
+import {SidebarLeft, Header} from '../index';
 import {TOKEN} from "../../constants/Users";
 import {getFromSession} from "../../utils";
 import autoBind from "react-autobind";
@@ -24,7 +24,6 @@ class MainLayout extends Component {
         }else{
             const {dispatch} = this.props;
             getInfo().then(user => {
-                console.log(user);
                 if (user.response === true) {
                     dispatch(alogin(user.value));
                 } else {
@@ -43,9 +42,8 @@ class MainLayout extends Component {
         return (
             <div className="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
                 <SidebarLeft/>
-                <div id="right-panel" className="right-panel">
+                <div id="right-panel" className="right-panel" style={{width:"100%"}}>
                     <Header/>
-                    <Breadcrumbs/>
                     {children}
                 </div>
             </div>
