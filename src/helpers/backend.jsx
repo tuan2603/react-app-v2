@@ -37,6 +37,30 @@ export function getAllCats() {
         .then((responseJson) => responseJson);
 }
 
+export function updateCat(body) {
+    const requestOptions = {
+        method: 'POST',
+        headers: authHeaderJSon(),
+        body: JSON.stringify(body),
+    };
+
+    return fetch(`${config.apiUrl}/api/update-cat`, requestOptions)
+        .then((response) => response.json())
+        .then((responseJson) => responseJson);
+}
+
+export function createCat(body) {
+    const requestOptions = {
+        method: 'POST',
+        headers: authHeaderJSon(),
+        body: JSON.stringify(body),
+    };
+
+    return fetch(`${config.apiUrl}/api/category`, requestOptions)
+        .then((response) => response.json())
+        .then((responseJson) => responseJson);
+}
+
 export function getTemsHelper(body) {
     const requestOptions = {
         method: 'POST',

@@ -2,74 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b04c2cd9-7e95-42a0-b70f-ee467a9bacf3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/actions/catsActions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/introduceAction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/colorpic.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ColorPic.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MyEditor.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SidebarLeft.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/categories/CatList.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/categories/CatPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/categories/Categories.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/privacy/Introduce.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/catReducers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/introduceReducers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TextInput.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/categories/CatForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/categories/NewCatPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/CatsLayout.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/skins/lightgray/content.inline.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/skins/lightgray/content.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/skins/lightgray/content.mobile.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/skins/lightgray/fonts/tinymce-mobile.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/skins/lightgray/fonts/tinymce-small.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/skins/lightgray/fonts/tinymce-small.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/skins/lightgray/fonts/tinymce-small.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/skins/lightgray/fonts/tinymce-small.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/skins/lightgray/fonts/tinymce.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/skins/lightgray/fonts/tinymce.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/skins/lightgray/fonts/tinymce.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/skins/lightgray/fonts/tinymce.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/skins/lightgray/img/anchor.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/skins/lightgray/img/loader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/skins/lightgray/img/object.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/skins/lightgray/img/trans.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/skins/lightgray/skin.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/skins/lightgray/skin.mobile.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/listActions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/skins/lightgray/content.inline.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/skins/lightgray/content.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/skins/lightgray/content.mobile.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/skins/lightgray/fonts/tinymce-mobile.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/skins/lightgray/fonts/tinymce-small.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/skins/lightgray/fonts/tinymce-small.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/skins/lightgray/fonts/tinymce-small.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/skins/lightgray/fonts/tinymce-small.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/skins/lightgray/fonts/tinymce.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/skins/lightgray/fonts/tinymce.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/skins/lightgray/fonts/tinymce.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/skins/lightgray/fonts/tinymce.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/skins/lightgray/img/anchor.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/skins/lightgray/img/loader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/skins/lightgray/img/object.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/skins/lightgray/img/trans.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/skins/lightgray/skin.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/skins/lightgray/skin.mobile.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SidebarLeft.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SidebarLeft.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/catsActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/catsActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/categories/CatPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/categories/CatPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/categories/Categories.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/categories/Categories.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/categories/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/categories/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/LayoutRoute.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/LayoutRoute.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/privacy/Privacy.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/privacy/Privacy.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/privacy/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/privacy/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/constants/ActionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/ActionTypes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/App.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/helpers/backend.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/backend.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/store.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/store.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/listReducers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/rootReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/catReducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/catReducers.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -83,74 +29,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="51" lean-forward="true" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="catsActions.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/actions/catsActions.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App.jsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="App.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/App.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="73" column="32" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
+            <state relative-caret-position="212">
+              <caret line="82" column="34" selection-start-line="82" selection-start-column="34" selection-end-line="82" selection-end-column="59" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LayoutRoute.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/layout/LayoutRoute.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainLayout.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/layout/MainLayout.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="59" column="15" selection-start-line="59" selection-start-column="15" selection-end-line="59" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SidebarLeft.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/SidebarLeft.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CatList.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/categories/CatList.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-163">
-              <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -158,11 +44,62 @@
       <file leaf-file-name="CatPage.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/categories/CatPage.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="19" column="55" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
+            <state relative-caret-position="51">
+              <caret line="3" column="49" lean-forward="true" selection-start-line="3" selection-end-line="3" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CatForm.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/categories/CatForm.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#0#38#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TextInput.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/TextInput.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="backend.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/helpers/backend.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="70">
+              <caret line="51" column="25" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="catsActions.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/actions/catsActions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="39" column="26" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActionTypes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/constants/ActionTypes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -170,8 +107,8 @@
       <file leaf-file-name="Categories.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/categories/Categories.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="674">
-              <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+            <state relative-caret-position="476">
+              <caret line="28" column="54" lean-forward="true" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -179,11 +116,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Login.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/logins/Login.jsx">
+      <file leaf-file-name="NewCatPage.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/categories/NewCatPage.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="24" column="5" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="24" selection-end-column="5" />
+            <state relative-caret-position="70">
+              <caret line="38" column="14" lean-forward="true" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="catReducers.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/reducers/catReducers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -237,11 +186,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/helpers/history.jsx" />
-        <option value="$PROJECT_DIR$/src/helpers/index.js" />
-        <option value="$PROJECT_DIR$/src/constants/Users.js" />
-        <option value="$PROJECT_DIR$/src/components/PrivateRoutes.jsx" />
-        <option value="$PROJECT_DIR$/src/components/Layout/PrivateRoutes.jsx" />
         <option value="$PROJECT_DIR$/src/components/Layout/index.js" />
         <option value="$PROJECT_DIR$/src/components/mains/Header.jsx" />
         <option value="$PROJECT_DIR$/src/components/Layout/LayoutRoute.jsx" />
@@ -255,7 +199,6 @@
         <option value="$PROJECT_DIR$/src/components/MemberOnlineChart.jsx" />
         <option value="$PROJECT_DIR$/src/components/Socials.jsx" />
         <option value="$PROJECT_DIR$/src/containers/index.js" />
-        <option value="$PROJECT_DIR$/src/components/layout/index.js" />
         <option value="$PROJECT_DIR$/src/components/layout/EmptyLayout.jsx" />
         <option value="$PROJECT_DIR$/src/utils/index.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
@@ -272,22 +215,28 @@
         <option value="$PROJECT_DIR$/src/actions/introduceAction.js" />
         <option value="$PROJECT_DIR$/src/components/categories/Categories.css" />
         <option value="$PROJECT_DIR$/src/helpers/store.jsx" />
-        <option value="$PROJECT_DIR$/src/helpers/backend.jsx" />
         <option value="$PROJECT_DIR$/src/actions/categoryActions.js" />
         <option value="$PROJECT_DIR$/src/components/Header.jsx" />
         <option value="$PROJECT_DIR$/src/reducers/categoryReducers.js" />
         <option value="$PROJECT_DIR$/src/reducers/rootReducer.js" />
-        <option value="$PROJECT_DIR$/src/constants/ActionTypes.js" />
-        <option value="$PROJECT_DIR$/src/reducers/catReducers.js" />
-        <option value="$PROJECT_DIR$/src/actions/catsActions.js" />
         <option value="$PROJECT_DIR$/src/components/SidebarLeft.css" />
         <option value="$PROJECT_DIR$/src/components/categories/index.js" />
         <option value="$PROJECT_DIR$/src/components/categories/CatList.jsx" />
-        <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/components/categories/Categories.jsx" />
-        <option value="$PROJECT_DIR$/src/components/categories/CatPage.jsx" />
         <option value="$PROJECT_DIR$/src/components/layout/LayoutRoute.jsx" />
+        <option value="$PROJECT_DIR$/src/components/layout/index.js" />
+        <option value="$PROJECT_DIR$/src/components/layout/MainLayout.jsx" />
+        <option value="$PROJECT_DIR$/src/components/layout/CatsLayout.jsx" />
+        <option value="$PROJECT_DIR$/src/components/categories/CatForm.jsx" />
+        <option value="$PROJECT_DIR$/src/components/TextInput.jsx" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/components/categories/CatPage.jsx" />
+        <option value="$PROJECT_DIR$/src/helpers/backend.jsx" />
+        <option value="$PROJECT_DIR$/src/constants/ActionTypes.js" />
+        <option value="$PROJECT_DIR$/src/actions/catsActions.js" />
+        <option value="$PROJECT_DIR$/src/reducers/catReducers.js" />
         <option value="$PROJECT_DIR$/src/containers/App.jsx" />
+        <option value="$PROJECT_DIR$/src/components/categories/Categories.jsx" />
+        <option value="$PROJECT_DIR$/src/components/categories/NewCatPage.jsx" />
       </list>
     </option>
   </component>
@@ -353,13 +302,6 @@
               <item name="react-app-v2" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-app-v2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="logins" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-app-v2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-app-v2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="constants" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -400,11 +342,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GITHUP\react-app-v2\src\components\layout" />
       <recent name="D:\GITHUP\react-app-v2\src\components\categories" />
       <recent name="D:\GITHUP\react-app-v2\src\components\privacy" />
       <recent name="D:\GITHUP\react-app-v2\src\actions" />
       <recent name="D:\GITHUP\react-app-v2\src\reducers" />
-      <recent name="D:\GITHUP\react-app-v2\src\assets\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\nodeproject\react-app-v2\src\components" />
@@ -442,12 +384,13 @@
       <workItem from="1532568489099" duration="16459000" />
       <workItem from="1533222891260" duration="5381000" />
       <workItem from="1533303733906" duration="10402000" />
-      <workItem from="1533386833641" duration="27383000" />
+      <workItem from="1533386833641" duration="30854000" />
+      <workItem from="1533486017723" duration="2548000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97241000" />
+    <option name="totallyTimeSpent" value="103260000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -458,10 +401,10 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50074404" side_tool="true" weight="0.3565365" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.37309292" />
       <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37309292" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49925596" weight="0.3327674" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49925596" visible="true" weight="0.3327674" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
@@ -474,25 +417,25 @@
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
+      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2470238" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.37309292" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49925596" visible="true" weight="0.46179965" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50074404" side_tool="true" weight="0.3565365" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2470238" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -541,12 +484,22 @@
           <line>25</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/layout/MainLayout.jsx</url>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="15" />
+      <option name="time" value="16" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/utils/config.jsx" />
+    <entry file="file://$PROJECT_DIR$/src/helpers/backend.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/userActions.js" />
     <entry file="file://$PROJECT_DIR$/src/reducers/userReducers.js" />
     <entry file="file://$PROJECT_DIR$/src/constants/Users.js" />
@@ -587,13 +540,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/layout/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -678,9 +624,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/termsAction.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/privacy/Introduce.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2431">
@@ -691,18 +634,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/termsReducers.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/introduceAction.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/toggletReducers.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Breadcrumbs.jsx">
       <provider selected="true" editor-type-id="text-editor">
@@ -715,26 +652,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/helpers/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/helpers/backend.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="28" column="26" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/constants/ActionTypes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -742,13 +659,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/catReducers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="47" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -803,78 +713,143 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/catsActions.js">
+    <entry file="file://$PROJECT_DIR$/src/components/layout/LayoutRoute.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="51" lean-forward="true" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+        <state relative-caret-position="153">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/SidebarLeft.css">
+    <entry file="file://$PROJECT_DIR$/src/components/layout/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+        <state relative-caret-position="51">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/layout/MainLayout.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="59" column="15" selection-start-line="59" selection-start-column="15" selection-end-line="59" selection-end-column="15" />
+        <state relative-caret-position="17">
+          <caret line="1" column="45" selection-start-line="1" selection-end-line="1" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/categories/Categories.jsx">
+    <entry file="file://$PROJECT_DIR$/src/components/layout/CatsLayout.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="674">
-          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/layout/LayoutRoute.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        <state relative-caret-position="34">
+          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/categories/CatList.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-163">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        <state relative-caret-position="-51">
+          <caret column="39" lean-forward="true" selection-start-column="39" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/SidebarLeft.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/TextInput.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/categories/CatForm.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/categories/CatPage.jsx">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="49" lean-forward="true" selection-start-line="3" selection-end-line="3" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/helpers/backend.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="51" column="25" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/constants/ActionTypes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/catsActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="39" column="26" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/catReducers.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="19" column="55" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
+          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/App.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="82" column="34" selection-start-line="82" selection-start-column="34" selection-end-line="82" selection-end-column="59" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/App.jsx">
+    <entry file="file://$PROJECT_DIR$/src/components/categories/Categories.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="73" column="32" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
+        <state relative-caret-position="476">
+          <caret line="28" column="54" lean-forward="true" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/categories/NewCatPage.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="38" column="14" lean-forward="true" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>

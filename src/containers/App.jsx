@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import {BrowserRouter, Switch} from 'react-router-dom';
 import '../assets/css/normalize.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../assets/css/font-awesome.min.css';
@@ -10,7 +10,7 @@ import '../assets/css/lib/vector-map/jqvmap.min.css';
 import '../assets/scss/style.css';
 import 'react-toastify/dist/ReactToastify.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
-import {LayoutRoute, EmptyLayout, MainLayout} from "../components/layout";
+import {LayoutRoute, EmptyLayout, MainLayout,CatsLayout} from "../components/layout";
 import {setupTimeOut} from '../utils';
 import {Categories, CatPage} from '../components/categories';
 import {Notification} from '../components/notification';
@@ -62,16 +62,28 @@ class App extends Component {
                             path='/'
                             layout={MainLayout}
                             component={Categories}/>
+
                         <LayoutRoute
                             exact
-                            path='/page-categories.html'
                             layout={MainLayout}
+                            path='/page-categories.html'
                             component={Categories}>
                         </LayoutRoute>
-                        <Route
+
+                        <LayoutRoute
+                            exact
+                            layout={CatsLayout}
                             path='/page-categories.html/:id'
-                            component={CatPage} >
-                        </Route>
+                            component={CatPage}>
+                        </LayoutRoute>
+
+                        <LayoutRoute
+                            exact
+                            layout={CatsLayout}
+                            path='/page-categories.html/new'
+                            component={CatPage}>
+                        </LayoutRoute>
+
                     </Switch>
                 </main>
             </BrowserRouter>

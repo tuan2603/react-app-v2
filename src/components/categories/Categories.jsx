@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
+import {Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
 import CatList from './CatList';
 import "./Categories.css";
@@ -18,7 +19,12 @@ class Categories extends Component {
                 <div className="animated fadeIn">
                     <div className="row">
                         <div className="col-md-12">
-                            <h1>Cats</h1>
+                            <h1>Danh mục <br />
+                                <Link to={'/page-categories.html/new'} className="btn btn-primary">
+                                     + tạo mới
+                                </Link>
+                            </h1>
+                            <br />
                             <div className="col-md-4">
                                 <CatList cats={cats}/>
                             </div>
@@ -28,7 +34,9 @@ class Categories extends Component {
                         </div>
                     </div>
                 </div>
-            </div>)
+            </div>
+
+        )
     }
 }
 
@@ -44,7 +52,7 @@ function mapStateToProps(state) {
         };
     } else {
         return {
-            cats: [{_id: '', value: '', label: '', icon:''}]
+            cats: [{_id: '', value: '', label: '', icon: ''}]
         }
     }
 }
