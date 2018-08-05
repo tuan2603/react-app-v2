@@ -1,7 +1,7 @@
 import React from 'react';
 import {connect} from "react-redux";
 import {show_notification} from "../../actions/notifyActions";
-import {term_edit} from "../../actions/termsAction";
+import {introduce_edit} from "../../actions/introduceAction";
 import {getTemsHelper, updateHelper, insertHelper} from "../../helpers";
 import autoBind from "react-autobind";
 import {EditorState, ContentState, convertToRaw} from 'draft-js';
@@ -11,7 +11,7 @@ import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 import {ColorPic} from '../../components';
 import draftToHtml from 'draftjs-to-html';
 
-class Privacy extends React.Component {
+class Introduce extends React.Component {
     constructor() {
         super();
         this.state = {
@@ -22,14 +22,14 @@ class Privacy extends React.Component {
     }
 
     componentWillMount() {
-        let {dispatch, terms} = this.props;
-        if (!terms) {
-            getTemsHelper({title:"terms"}).then(termg => {
-                if (termg.response === true) {
-                    if (!termg.value){
-                        dispatch(term_edit(termg.value));
+        let {dispatch, introduce} = this.props;
+        if (!introduce) {
+            getTemsHelper({title:"introduce"}).then(introduceg => {
+                if (introduceg.response === true) {
+                    if (introduceg.value !== undefined) {
+                        dispatch(introduce_edit(introduceg.value));
                     }
-                    const blocksFromHtml = htmlToDraftjs(termg.value.content);
+                    const blocksFromHtml = htmlToDraftjs(introduceg.value.content);
                     const {contentBlocks, entityMap} = blocksFromHtml;
                     const contentState = ContentState.createFromBlockArray(contentBlocks, entityMap);
                     const editorState = EditorState.createWithContent(contentState);
@@ -39,7 +39,7 @@ class Privacy extends React.Component {
                 }
             });
         } else {
-            const blocksFromHtml = htmlToDraftjs(terms.content);
+            const blocksFromHtml = htmlToDraftjs(introduce.content);
             const {contentBlocks, entityMap} = blocksFromHtml;
             const contentState = ContentState.createFromBlockArray(contentBlocks, entityMap);
             const editorState = EditorState.createWithContent(contentState);
@@ -49,35 +49,35 @@ class Privacy extends React.Component {
 
 
     handleSubmit() {
-        const {dispatch, terms} = this.props;
+        const {dispatch, introduce} = this.props;
         let {isChange, editorState} = this.state;
         if (isChange) {
             this.setState({isChange: false});
             let obj = {};
-            if (terms != null) {
-                obj._id = terms._id;
+            if (introduce != null) {
+                obj._id = introduce._id;
             }
-            obj.title = "terms";
+            obj.title = "introduce";
             if (editorState != null) {
                 obj.content = draftToHtml(convertToRaw(editorState.getCurrentContent()));
                 setTimeout(() => {
                     if (obj.content) {
                         if (obj._id !== undefined){
-                            updateHelper(obj).then(terms => {
-                                if (terms.response === true) {
+                            updateHelper(obj).then(introduceu => {
+                                if (introduceu.response === true) {
                                     dispatch(show_notification({txt: "Upload thành công", type: "suc"}));
-                                    dispatch(term_edit(terms.value));
+                                    dispatch(introduce_edit(introduceu.value));
                                 } else {
-                                    dispatch(show_notification({txt: terms.value, type: "err"}));
+                                    dispatch(show_notification({txt: introduceu.value, type: "err"}));
                                 }
                             });
                         } else {
-                            insertHelper(obj).then(terms => {
-                                if (terms.response === true) {
+                            insertHelper(obj).then(introducei => {
+                                if (introducei.response === true) {
                                     dispatch(show_notification({txt: "Upload thành công", type: "suc"}));
-                                    dispatch(term_edit(terms.value));
+                                    dispatch(introduce_edit(introducei.value));
                                 } else {
-                                    dispatch(show_notification({txt: terms.value, type: "err"}));
+                                    dispatch(show_notification({txt: introducei.value, type: "err"}));
                                 }
                             });
                         }
@@ -141,8 +141,8 @@ class Privacy extends React.Component {
 
 let mapStateToProps = (state) => {
     return {
-        terms: state.termsReducers,
+        introduce: state.introduceReducers,
         notification: state.notifyReducers
     };
 };
-export default connect(mapStateToProps)(Privacy);
+export default connect(mapStateToProps)(Introduce);

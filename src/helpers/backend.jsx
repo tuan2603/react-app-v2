@@ -26,25 +26,49 @@ export function getInfo() {
         .then((responseJson) => responseJson);
 }
 
-export function getTemsHelper() {
+export function getAllCats() {
     const requestOptions = {
         method: 'GET',
         headers: authHeader()
     };
 
-    return fetch(`${config.apiUrl}/api/terms`, requestOptions)
+    return fetch(`${config.apiUrl}/api/category`, requestOptions)
         .then((response) => response.json())
         .then((responseJson) => responseJson);
 }
 
-export function TemsHelper(body) {
+export function getTemsHelper(body) {
     const requestOptions = {
         method: 'POST',
         headers: authHeaderJSon(),
         body: JSON.stringify(body),
     };
 
-    return fetch(`${config.apiUrl}/api/terms`, requestOptions)
+    return fetch(`${config.apiUrl}/api/get-terms`, requestOptions)
+        .then((response) => response.json())
+        .then((responseJson) => responseJson);
+}
+
+export function updateHelper(body) {
+    const requestOptions = {
+        method: 'POST',
+        headers: authHeaderJSon(),
+        body: JSON.stringify(body),
+    };
+
+    return fetch(`${config.apiUrl}/api/update-terms`, requestOptions)
+        .then((response) => response.json())
+        .then((responseJson) => responseJson);
+}
+
+export function insertHelper(body) {
+    const requestOptions = {
+        method: 'POST',
+        headers: authHeaderJSon(),
+        body: JSON.stringify(body),
+    };
+
+    return fetch(`${config.apiUrl}/api/insert-terms`, requestOptions)
         .then((response) => response.json())
         .then((responseJson) => responseJson);
 }

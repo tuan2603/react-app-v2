@@ -28,7 +28,6 @@ class Header extends React.Component {
 
     render() {
         let {username} = this.props;
-        console.log(username);
         return (
             <header id="header" className="header">
                 <div className="header-menu">

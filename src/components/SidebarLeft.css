@@ -1,0 +1,35 @@
+.left-panel .navbar .navbar-nav li > a .menu-icon {
+    color: #8b939b;
+    float: left;
+    margin-top: 8px;
+    width: 24px !important;
+    text-align: left;
+    z-index: 9;
+}
+
+.navbar {
+    background: #272c33;
+    border-radius: 0;
+    border: none;
+    display: block;
+    margin: 0;
+    margin-bottom: 100px;
+    padding: 0;
+}
+
+.navbar .navbar-brand {
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.open aside.left-panel .navbar .navbar-brand.hidden {
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 6px;
+    padding-right: 12px;
+    text-align: center;
+}
