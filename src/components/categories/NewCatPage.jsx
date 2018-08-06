@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import * as catActions from '../../actions/catsActions';
+import * as courseActions from '../../actions/catsActions';
 import CatForm from './CatForm';
 import autoBind from "react-autobind";
 
@@ -39,7 +39,7 @@ class NewCatPage extends Component {
     render() {
         return (
             <div>
-                <h1>new cat</h1>
+                <h1>Tạo mới danh mục</h1>
                 <CatForm
                     cat={this.state.cat}
                     onSave={this.saveCat}
@@ -53,21 +53,16 @@ class NewCatPage extends Component {
 
 
 NewCatPage.propTypes = {
-    cat: PropTypes.object.isRequired,
     actions: PropTypes.object.isRequired
 };
 
-function mapStateToProps(state, ownProps) {
-    return {
-        cat: state.cat
-    };
-}
+
 
 function mapDispatchToProps(dispatch) {
     return {
-        actions: bindActionCreators(catActions, dispatch)
+        actions: bindActionCreators(courseActions, dispatch)
     };
 }
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(NewCatPage);
+export default connect( mapDispatchToProps)(NewCatPage);

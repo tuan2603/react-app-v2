@@ -1,5 +1,6 @@
 import * as types from '../constants/ActionTypes';
 import {getAllCats, updateCat, createCat} from '../helpers';
+import {show_notification} from './notifyActions';
 
 export function loadCats() {
     return function(dispatch) {
@@ -18,10 +19,13 @@ export function loadCatsSuccess(cats) {
 }
 
 export function updateCats(cat) {
-    return function (dispatch) {
+       return function (dispatch) {
         return updateCat(cat).then(responseCat => {
             if (responseCat.response === true) {
                 dispatch(updateCatSuccess(responseCat.value));
+                dispatch(show_notification({txt: "update thành công", type: "suc"}));
+            }else{
+                dispatch(show_notification({txt: responseCat.value, type: "suc"}));
             }
         }).catch(error => {
             throw(error);
@@ -42,8 +46,10 @@ export function createCats(cat) {
         return createCat(cat).then(responseCat => {
             if (responseCat.response === true) {
                 dispatch(createCatSuccess(responseCat.value));
+                dispatch(show_notification({txt: "insert thành công", type: "suc"}));
                 return responseCat.value;
             }else{
+                dispatch(show_notification({txt: responseCat.value, type: "suc"}));
                 return null;
             }
         }).catch(error => {

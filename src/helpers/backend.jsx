@@ -44,7 +44,7 @@ export function updateCat(body) {
         body: JSON.stringify(body),
     };
 
-    return fetch(`${config.apiUrl}/api/update-cat`, requestOptions)
+    return fetch(`${config.apiUrl}/api/category/update`, requestOptions)
         .then((response) => response.json())
         .then((responseJson) => responseJson);
 }

@@ -62,7 +62,7 @@ class Privacy extends React.Component {
                 obj.content = draftToHtml(convertToRaw(editorState.getCurrentContent()));
                 setTimeout(() => {
                     if (obj.content) {
-                        if (obj._id !== undefined){
+                        if (terms._id){
                             updateHelper(obj).then(terms => {
                                 if (terms.response === true) {
                                     dispatch(show_notification({txt: "Upload thành công", type: "suc"}));

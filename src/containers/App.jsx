@@ -12,7 +12,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import {LayoutRoute, EmptyLayout, MainLayout,CatsLayout} from "../components/layout";
 import {setupTimeOut} from '../utils';
-import {Categories, CatPage} from '../components/categories';
+import {Categories, CatPage, NewCatPage} from '../components/categories';
 import {Notification} from '../components/notification';
 import {Privacy, Introduce} from '../components/privacy';
 import {MyEditor} from '../components';
@@ -73,16 +73,18 @@ class App extends Component {
                         <LayoutRoute
                             exact
                             layout={CatsLayout}
-                            path='/page-categories.html/:id'
-                            component={CatPage}>
+                            path='/page-categories.html/new'
+                            component={NewCatPage}>
                         </LayoutRoute>
 
                         <LayoutRoute
                             exact
                             layout={CatsLayout}
-                            path='/page-categories.html/new'
+                            path='/page-categories.html/:id'
                             component={CatPage}>
                         </LayoutRoute>
+
+
 
                     </Switch>
                 </main>

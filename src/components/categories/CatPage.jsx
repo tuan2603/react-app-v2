@@ -30,12 +30,18 @@ class CatPage extends Component {
         this.props.actions.updateCats(this.state.cat);
     }
 
+    componentWillReceiveProps(nextProps) {
+        if (this.props.cat._id !== nextProps.cat._id) {
+            this.setState({cat: nextProps.cat});
+        }
+    }
+
     render() {
         let {cat} = this.props;
         if (this.state.isEditing) {
             return (
-                <div>
-                    <h1>edit cat</h1>
+                <div className="col-md-8 col-md-offset-2">
+                    <h1> Chỉnh sửa </h1>
                     <CatForm cat={cat} onSave={this.saveCat} onChange={this.updateCatState}/>
                 </div>
             )
@@ -66,7 +72,7 @@ function mapStateToProps(state, ownProps) {
     let cats = state.cats;
     let cat = {_id: '', value: '', label: '', icon: ''};
     let id = ownProps.match.params.id;
-    if (cats) {
+    if (cats && id ) {
         cat = Object.assign({}, state.cats.find(cat => cat._id === id));
     }
     return {cat: cat};

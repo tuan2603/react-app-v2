@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import TextInput from '../../components/TextInput';
 
 class CatForm extends Component {
+
     render() {
         return (
             <div>
