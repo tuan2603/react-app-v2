@@ -1,10 +1,13 @@
 import React,{Component} from 'react';
 import PropTypes from 'prop-types';
 import TextInput from '../../components/TextInput';
+import ImageUpload from '../../components/ImageUpload';
+
 
 class CatForm extends Component {
 
     render() {
+
         return (
             <div>
                 <form>
@@ -19,6 +22,12 @@ class CatForm extends Component {
                         label="label"
                         value={this.props.cat.label}
                         onChange={this.props.onChange}/>
+
+                    <ImageUpload
+                        name="icon"
+                        label="icon"
+                        value={this.props.cat.icon}
+                        onChange={this.props.onFileChange}/>
 
                     <input
                         type="submit"

@@ -16,7 +16,7 @@ class CatList extends Component {
                 <ul className="list-group">
                     {cats.map(cat =>
                     <li className="list-group-item" key={cat._id}>
-                    <Link to={'/page-categories.html/' + cat._id}>{cat.label}</Link>
+                    <Link to={'/page-categories.html/' + cat._id} >{cat.label}</Link>
                     </li>
                     )}
                 </ul>
@@ -27,7 +27,6 @@ class CatList extends Component {
                         <li className="list-group-item" >
                            null
                         </li>
-
                 </ul>
             )
         }
@@ -37,7 +36,10 @@ class CatList extends Component {
 };
 
 CatList.propTypes = {
-    cats: PropTypes.array.isRequired
+    cats: PropTypes.array.isRequired,
 };
 
-export default CatList;
+
+
+export default (CatList);
+

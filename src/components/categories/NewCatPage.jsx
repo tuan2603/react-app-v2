@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
+import {Redirect} from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import * as courseActions from '../../actions/catsActions';
+import * as catActions from '../../actions/catsActions';
 import CatForm from './CatForm';
 import autoBind from "react-autobind";
 
@@ -18,7 +19,9 @@ class NewCatPage extends Component {
                 label: '',
                 icon: '',
             },
-            saving: false
+            saving: false,
+            file: '',
+            isRedirect: false
         };
         autoBind(this);
     }
@@ -31,12 +34,30 @@ class NewCatPage extends Component {
         return this.setState({cat: cat});
     }
 
+    updateCatFile(file) {
+        return this.setState({file});
+    }
+
     saveCat(event) {
         event.preventDefault();
-        this.props.actions.createCats(this.state.cat)
+        const data = new FormData();
+        data.append('icon', this.state.file);
+        data.append('value',this.state.cat.value);
+        data.append('label', this.state.cat.label);
+        this.props.actions.createCats(data)
+            .then(cat=>{
+                if (cat) {
+                    this.setState({cat, isRedirect:true});
+                }
+            });
+
     }
 
     render() {
+        let {isRedirect, cat} = this.state;
+        if (isRedirect && cat._id) {
+            return  <Redirect to={`/page-categories.html/${cat._id}`} />;
+        }
         return (
             <div>
                 <h1>Tạo mới danh mục</h1>
@@ -44,6 +65,7 @@ class NewCatPage extends Component {
                     cat={this.state.cat}
                     onSave={this.saveCat}
                     onChange={this.updateCatState}
+                    onFileChange={this.updateCatFile}
                    />
             </div>
         );
@@ -53,16 +75,18 @@ class NewCatPage extends Component {
 
 
 NewCatPage.propTypes = {
-    actions: PropTypes.object.isRequired
+    actions: PropTypes.object.isRequired,
 };
-
 
 
 function mapDispatchToProps(dispatch) {
     return {
-        actions: bindActionCreators(courseActions, dispatch)
+        actions: bindActionCreators(catActions, dispatch)
     };
+}
+function mapStateToProps(state) {
+    return {cats : state.cats};
 }
 
 
-export default connect( mapDispatchToProps)(NewCatPage);
+export default connect(mapStateToProps,mapDispatchToProps)(NewCatPage);

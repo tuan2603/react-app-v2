@@ -65,10 +65,10 @@ class App extends Component {
 
                         <LayoutRoute
                             exact
-                            layout={MainLayout}
                             path='/page-categories.html'
-                            component={Categories}>
-                        </LayoutRoute>
+                            layout={MainLayout}
+                            component={Categories}
+                            />
 
                         <LayoutRoute
                             exact
@@ -83,9 +83,6 @@ class App extends Component {
                             path='/page-categories.html/:id'
                             component={CatPage}>
                         </LayoutRoute>
-
-
-
                     </Switch>
                 </main>
             </BrowserRouter>

@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import {Link} from 'react-router-dom';
+import {Link,Redirect} from 'react-router-dom';
 import PropTypes from 'prop-types';
 import CatList from './CatList';
+import {bindActionCreators} from 'redux';
 import "./Categories.css";
 import autoBind from "react-autobind";
+import * as actions from '../../actions/catsActions';
 
 class Categories extends Component {
     constructor(props) {
@@ -12,19 +14,33 @@ class Categories extends Component {
         autoBind(this);
     }
 
+    componentWillMount() {
+        if (this.props.cats[0]._id === '') {
+            this.props.actions.loadCats();
+        }
+    }
+
     render() {
-        let {cats} = this.props;
+        let {cats,children} = this.props;
+
+        if (children === undefined && cats.length > 0) {
+                return  <Redirect to={`/page-categories.html/${cats[0]._id}`} />;
+        }
         return (
             <div className="content mt-3">
                 <div className="animated fadeIn">
                     <div className="row">
+                        <div className="col-md-4">
+                            <h1>Danh mục </h1>
+                        </div>
+                        <div className="col-md-8">
+                            <Link to={'/page-categories.html/new'} className="btn btn-primary">
+                                + tạo mới
+                            </Link>
+                        </div>
+                    </div>
+                    <div className="row">
                         <div className="col-md-12">
-                            <h1>Danh mục <br />
-                                <Link to={'/page-categories.html/new'} className="btn btn-primary">
-                                     + tạo mới
-                                </Link>
-                            </h1>
-                            <br />
                             <div className="col-md-4">
                                 <CatList cats={cats}/>
                             </div>
@@ -57,5 +73,9 @@ function mapStateToProps(state) {
     }
 }
 
-export default connect(mapStateToProps)(Categories);
+function mapDispatchToProps(dispatch) {
+    return {actions: bindActionCreators(actions, dispatch)}
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Categories);
 

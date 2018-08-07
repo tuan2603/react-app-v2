@@ -49,11 +49,35 @@ export function updateCat(body) {
         .then((responseJson) => responseJson);
 }
 
-export function createCat(body) {
+export function deleteCat(body) {
     const requestOptions = {
         method: 'POST',
         headers: authHeaderJSon(),
         body: JSON.stringify(body),
+    };
+
+    return fetch(`${config.apiUrl}/api/category/delete`, requestOptions)
+        .then((response) => response.json())
+        .then((responseJson) => responseJson);
+}
+
+export function updateCatImage(body) {
+    const requestOptions = {
+        method: 'POST',
+        headers: authHeader(),
+        body: body,
+    };
+
+    return fetch(`${config.apiUrl}/api/category/update-image`, requestOptions)
+        .then((response) => response.json())
+        .then((responseJson) => responseJson);
+}
+
+export function createCat(body) {
+    const requestOptions = {
+        method: 'POST',
+        headers: authHeader(),
+        body: body,
     };
 
     return fetch(`${config.apiUrl}/api/category`, requestOptions)

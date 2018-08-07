@@ -1,4 +1,4 @@
-import {LOAD_CATS_SUCCESS, UPDATE_CAT_SUCCESS, CREATE_CAT_SUCCESS} from '../constants/ActionTypes';
+import {LOAD_CATS_SUCCESS, UPDATE_CAT_SUCCESS, CREATE_CAT_SUCCESS, DELETE_CAT_SUCCESS} from '../constants/ActionTypes';
 
 export default function catReducer(state = null, action) {
     switch (action.type) {
@@ -14,6 +14,14 @@ export default function catReducer(state = null, action) {
                 ...state.filter(cat => cat._id !== action.cat._id),
                 Object.assign({}, action.cat)
             ];
+        case DELETE_CAT_SUCCESS: {
+            const newState = Object.assign([], state);
+            const indexOfCatToDelete = state.findIndex(cat => {
+                return cat._id === action.cat._id
+            })
+            newState.splice(indexOfCatToDelete, 1);
+            return newState;
+        }
         default:
             return state;
     }
