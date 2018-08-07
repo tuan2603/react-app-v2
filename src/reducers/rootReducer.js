@@ -4,6 +4,7 @@ import notifyReducers from './notifyReducers';
 import termsReducers from './termsReducers';
 import introduceReducers from './introduceReducers';
 import cats from './catReducers';
+import pages from './pageReducers';
 
 const rootReducer = combineReducers({
     userReducers,
@@ -11,6 +12,7 @@ const rootReducer = combineReducers({
     termsReducers,
     introduceReducers,
     cats,
+    pages,
 });
 
 export default rootReducer;

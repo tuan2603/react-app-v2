@@ -1,5 +1,5 @@
 import {LOAD_CATS_SUCCESS, UPDATE_CAT_SUCCESS, CREATE_CAT_SUCCESS, DELETE_CAT_SUCCESS} from '../constants/ActionTypes';
-import {history} from "../helpers";
+// import {history} from "../helpers";
 
 export default function catReducer(state = null, action) {
     switch (action.type) {

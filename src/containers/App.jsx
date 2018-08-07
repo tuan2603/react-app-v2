@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import {BrowserRouter, Switch} from 'react-router-dom';
+import {Router, Switch} from 'react-router-dom';
 import '../assets/css/normalize.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../assets/css/font-awesome.min.css';
@@ -13,10 +13,12 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import {LayoutRoute, EmptyLayout, MainLayout,CatsLayout} from "../components/layout";
 import {setupTimeOut} from '../utils';
 import {Categories, CatPage, NewCatPage} from '../components/categories';
+import {Pages} from '../components/pages';
 import {Notification} from '../components/notification';
 import {Privacy, Introduce} from '../components/privacy';
 import {MyEditor} from '../components';
 import {Login} from '../components/logins';
+import {history} from "../helpers";
 
 
 class App extends Component {
@@ -28,7 +30,7 @@ class App extends Component {
         const {notification} = this.props;
 
         return (
-            <BrowserRouter>
+            <Router history={history}>
                 <main>
                     {(notification !== null) && <Notification/>}
 
@@ -83,9 +85,15 @@ class App extends Component {
                             path='/page-categories.html/:id'
                             component={CatPage}>
                         </LayoutRoute>
+
+                        <LayoutRoute
+                            exact
+                            path='/trang.html'
+                            layout={MainLayout}
+                            component={Pages}/>
                     </Switch>
                 </main>
-            </BrowserRouter>
+            </Router>
         );
     }
 }
