@@ -23,8 +23,8 @@ class Categories extends Component {
     render() {
         let {cats,children} = this.props;
 
-        if (children === undefined && cats.length > 0) {
-                return  <Redirect to={`/page-categories.html/${cats[0]._id}`} />;
+        if (children === undefined && cats.length > 1) {
+               return  <Redirect to={`/page-categories.html/${cats[0]._id}`} />;
         }
         return (
             <div className="content mt-3">
