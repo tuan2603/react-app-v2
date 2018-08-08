@@ -63,7 +63,7 @@ class NewPage extends Component {
             <div className="col-md-12 col-md-offset-2">
                 <div className="card">
                     <div className="card-header">
-                        <h1 className="wp-heading-inline">Thêm trang mới</h1>
+                        <h2 className="wp-heading-inline">Thêm trang mới</h2>
                         <Link  to={`/trang.html`}  className="page-title-action">
                             <strong className=" btn btn-primary">Về trước
                             </strong>

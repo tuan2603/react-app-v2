@@ -28,7 +28,7 @@ class App extends Component {
         const {notification} = this.props;
 
         return (
-            <Router history={history}>
+            <Router history={history} >
                 <main>
                     {(notification !== null) && <Notification/>}
 

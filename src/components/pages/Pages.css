@@ -104,6 +104,7 @@ tbody {
 
 .card-header {
     display: inherit !important;
+    margin-bottom: 16px;
 }
 .card-header button{
     margin-left:16px;
