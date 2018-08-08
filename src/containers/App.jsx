@@ -13,10 +13,8 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import {LayoutRoute, EmptyLayout, MainLayout,CatsLayout} from "../components/layout";
 import {setupTimeOut} from '../utils';
 import {Categories, CatPage, NewCatPage} from '../components/categories';
-import {Pages} from '../components/pages';
+import {Pages,EditPage, NewPage } from '../components/pages';
 import {Notification} from '../components/notification';
-import {Privacy, Introduce} from '../components/privacy';
-import {MyEditor} from '../components';
 import {Login} from '../components/logins';
 import {history} from "../helpers";
 
@@ -37,27 +35,9 @@ class App extends Component {
                     <Switch>
                         <LayoutRoute
                             exact
-                            path='/myedit'
-                            layout={EmptyLayout}
-                            component={MyEditor}/>
-
-                        <LayoutRoute
-                            exact
                             path='/page-login.html'
                             layout={EmptyLayout}
                             component={Login}/>
-
-                        <LayoutRoute
-                            exact
-                            path='/termsandconditions.html'
-                            layout={MainLayout}
-                            component={Privacy}/>
-
-                        <LayoutRoute
-                            exact
-                            path='/introduce.html'
-                            layout={MainLayout}
-                            component={Introduce}/>
 
                         <LayoutRoute
                             exact
@@ -91,6 +71,20 @@ class App extends Component {
                             path='/trang.html'
                             layout={MainLayout}
                             component={Pages}/>
+
+                        <LayoutRoute
+                            exact
+                            layout={MainLayout}
+                            path='/trang.html/new'
+                            component={NewPage}>
+                        </LayoutRoute>
+
+                        <LayoutRoute
+                            exact
+                            layout={MainLayout}
+                            path='/trang.html/:id'
+                            component={EditPage}>
+                        </LayoutRoute>
                     </Switch>
                 </main>
             </Router>

@@ -6,9 +6,6 @@ import {getFromSession} from "../../utils";
 import autoBind from "react-autobind";
 import {Redirect} from 'react-router-dom';
 import {connect} from "react-redux";
-import {getInfo} from '../../helpers';
-import {alogin} from "../../actions/userActions";
-import {show_notification} from "../../actions/notifyActions";
 class CatsLayout extends Component {
     constructor(props) {
         super(props);
@@ -22,16 +19,6 @@ class CatsLayout extends Component {
             this.setState({
                 redirectToReferrer: true,
             }) ;
-        }else{
-            const {dispatch} = this.props;
-            getInfo().then(user => {
-                if (user.response === true) {
-                    dispatch(alogin(user.value));
-                } else {
-                    dispatch(show_notification({txt: "Tên hoặc mật khẩu không đúng", type: "err"}));
-                }
-            });
-
         }
     }
     render() {

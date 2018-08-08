@@ -1,70 +1,54 @@
 import * as config from '../utils';
 import {authHeader} from '../helpers';
+import {authHeaderJSon} from "./index";
 
 class pageApi {
-
     static requestHeaders() {
         return authHeader;
     }
 
     static getAllPages() {
-        const headers = this.requestHeaders();
-        const request = new Request(`${config.apiUrl}/api/get-all-pages`, {
-            method: 'GET',
-            headers: headers
-        });
-
-        return fetch(request).then(response => {
-            return response.json();
-        }).catch(error => {
-            return error;
-        });
+        return fetch(`${config.apiUrl}/api/get-all-pages`)
+            .then((response) => response.json())
+            .then((responseJson) => responseJson);
     }
 
     static updatePage(body) {
-        const headers = Object.assign({'Content-Type': 'application/json'}, this.requestHeaders());
-        const request = new Request(`${config.apiUrl}/api/update-terms`, {
+        const requestOptions = {
             method: 'POST',
-            headers: headers,
+            headers: authHeaderJSon(),
             body: JSON.stringify(body),
-        });
+        };
 
-        return fetch(request).then(response => {
-            return response.json();
-        }).catch(error => {
-            return error;
-        });
+        return fetch(`${config.apiUrl}/api/update-terms`, requestOptions)
+            .then((response) => response.json())
+            .then((responseJson) => responseJson);
     }
 
     static createPage(body) {
-        const headers = Object.assign({'Content-Type': 'application/json'}, this.requestHeaders());
-        const request = new Request(`${config.apiUrl}/api/insert-terms`, {
+        const requestOptions = {
             method: 'POST',
-            headers: headers,
+            headers: authHeaderJSon(),
             body: JSON.stringify(body),
-        });
+        };
 
-
-        return fetch(request).then(response => {
-            return response.json();
-        }).catch(error => {
-            return error;
-        });
+        return fetch(`${config.apiUrl}/api/insert-terms`, requestOptions)
+            .then((response) => response.json())
+            .then((responseJson) => responseJson);
     }
 
     static deletePage(body) {
-        const headers = Object.assign({'Content-Type': 'application/json'}, this.requestHeaders());
-        const request = new Request(`${config.apiUrl}/api/delete-page`, {
+        const requestOptions = {
             method: 'POST',
-            headers: headers
-        });
+            headers: authHeaderJSon(),
+            body: JSON.stringify(body),
+        };
 
-        return fetch(request).then(response => {
-            return response.json();
-        }).catch(error => {
-            return error;
-        });
+        return fetch(`${config.apiUrl}/api/delete-page`, requestOptions)
+            .then((response) => response.json())
+            .then((responseJson) => responseJson);
     }
+
 }
 
 export default pageApi;

@@ -88,3 +88,27 @@ tbody {
 .striped>tbody>:nth-child(odd), ul.striped>:nth-child(odd) {
     background-color: #f9f9f9;
 }
+
+.rdw-editor-main{
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.rdw-editor-main {
+    height: 275px !important;
+    border: 1px solid #F1F1F1 !important;
+    padding: 5px !important;
+    border-radius: 2px !important;
+}
+
+
+.card-header {
+    display: inherit !important;
+}
+.card-header button{
+    margin-left:16px;
+}
+
+a.page-title-action{
+    margin-top: 10px;
+}

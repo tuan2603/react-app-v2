@@ -1,11 +1,11 @@
 import * as config from '../utils';
 import {authHeader, authHeaderJSon} from '../helpers';
 
-export function login(phone, password) {
+export function login(obj) {
     const configheader = {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({phone, password}),
+        body: JSON.stringify(obj),
     };
 
     return fetch(`${config.apiUrl}/api/auth/sign-in-admin`, configheader)

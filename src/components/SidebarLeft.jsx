@@ -20,15 +20,6 @@ class SidebarLeft extends React.Component {
 
                     <div id="main-menu" className="main-menu collapse navbar-collapse">
                         <ul className="nav navbar-nav">
-                            <li className="active">
-                                <Link to="/termsandconditions.html">
-                                    <i className="menu-icon fa ti-align-justify"></i>
-                                    Điều khoản sử dụng
-                                </Link>
-                            </li>
-                            <li className="active">
-                                <Link to="/introduce.html"> <i className="menu-icon fa ti-align-justify"></i> Giới thiệu </Link>
-                            </li>
 
                             <li className="active">
                                 <Link to="/page-categories.html"> <i className="menu-icon fa ti-align-justify"></i> Danh Mục </Link>

@@ -44,6 +44,7 @@ export function updatePageSuccess(page) {
 export function createPages(page) {
     return function (dispatch) {
         return pageApi.createPage(page).then(responsePage => {
+            console.log(responsePage);
             if (responsePage.response === true) {
                 dispatch(createPageSuccess(responsePage.value));
                 dispatch(show_notification({txt: "insert thành công", type: "suc"}));

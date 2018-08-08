@@ -26,14 +26,13 @@ class Pages extends Component {
         return (
             <div className="content mt-3">
                 <div className="animated fadeIn wrap">
-                    <h1 className="wp-heading-inline">Trang</h1>
-                    <hr className="wp-header-end"/>
                     <div className="row">
                         <div className="col-md-12">
                             <div className="card">
                                 <div className="card-header">
+                                    <h1 className="wp-heading-inline">Trang</h1>
                                     <Link to={'/trang.html/new'} className="page-title-action">
-                                        <strong className="card-title">Thêm trang mới</strong>
+                                        <strong className="card-title btn btn-primary">Thêm trang mới</strong>
                                     </Link>
                                 </div>
                                 <PageList pages={pages}/>
@@ -58,7 +57,7 @@ function mapStateToProps(state) {
         };
     } else {
         return {
-            pages: [{_id: '', title: '', content: '', accountID: ''}]
+            pages: [{_id: '', title: '', content: '',permalink: '', author: {fullName: ''},  create_at:Date.now() }]
         }
     }
 }

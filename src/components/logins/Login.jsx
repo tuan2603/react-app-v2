@@ -1,13 +1,10 @@
 import React, {Component} from 'react';
 import {Redirect} from 'react-router-dom';
 import Logo from '../../assets/img/logo.png';
-import {connect} from 'react-redux';
-import {alogin, alogout} from '../../actions/userActions';
-import {show_notification} from '../../actions/notifyActions';
-import {TOKEN} from '../../constants/Users';
-import {login} from '../../helpers';
 import autoBind from 'react-autobind';
-import {setInSession, removeSession, getFromSession} from '../../utils';
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
+import * as userActions from '../../actions/userActions';
 
 class Login extends Component {
     constructor(props) {
@@ -25,10 +22,9 @@ class Login extends Component {
     }
 
     componentDidMount() {
-        if (getFromSession(TOKEN) != null) {
-            this.props.dispatch(alogout());
-            removeSession(TOKEN);
-        }
+        // logout
+        this.props.actions.alogout();
+
     }
 
     phoneHandle(e) {
@@ -45,21 +41,13 @@ class Login extends Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        //console.log(this.state.username);
         this.setState({submitted: true});
-        const {dispatch} = this.props;
         let {phone, password} = this.state.username;
-        login(phone, password)
-            .then(user => {
-                if (user.response === true) {
-                    dispatch(alogin({token: user.value}));
-                    setInSession(TOKEN, user.value);
-                    dispatch(show_notification({txt: "Đăng nhập thành công", type: "suc"}));
-                    this.setState({redirectToReferrer: true});
-                } else {
-                    dispatch(show_notification({txt: "Tên hoặc mật khẩu không đúng", type: "err"}));
-                }
-            });
+        this.props.actions.Login({phone, password}).then(res => {
+            if (res) {
+                this.setState({redirectToReferrer: true});
+            }
+        });
     }
 
     render() {
@@ -119,8 +107,11 @@ class Login extends Component {
 let mapStateToProps = (state) => {
     return {
         loggingIn: state.userReducers,
-        notification: state.notifyReducers
     };
 };
 
-export default connect(mapStateToProps)(Login);
+function mapDispatchToProps(dispatch) {
+    return {actions: bindActionCreators(userActions, dispatch)}
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Login);
