@@ -6,7 +6,7 @@ import {App} from './containers';
 import {loadCats} from './actions/catsActions';
 import {loadPages} from './actions/pageActions';
 import {loadUser} from './actions/userActions';
-
+import { BrowserRouter } from 'react-router-dom'
 
 
 store.dispatch(loadUser());
@@ -15,7 +15,9 @@ store.dispatch(loadPages());
 store.subscribe(() => console.log(store.getState()));
 render((
         <Provider store={store}>
+
                 <App/>
+
         </Provider>
     ),
     document.getElementById('root')
