@@ -19,6 +19,9 @@ class Categories extends Component {
             this.props.actions.loadCats();
         }
     }
+    componentDidMount() {
+        document.title = "Các gói tài sản vay"
+    }
 
     render() {
         let {cats,children} = this.props;

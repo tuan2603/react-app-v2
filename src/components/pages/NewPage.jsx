@@ -27,6 +27,9 @@ class NewPage extends Component {
         autoBind(this);
     }
 
+    componentDidMount() {
+        document.title = "Tạo gói mới"
+    }
 
     updatePageState(event) {
         const field = event.target.name;

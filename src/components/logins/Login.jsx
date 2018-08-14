@@ -25,6 +25,9 @@ class Login extends Component {
         // logout
         this.props.actions.alogout();
 
+            document.title = "đăng nhập"
+
+
     }
 
     phoneHandle(e) {

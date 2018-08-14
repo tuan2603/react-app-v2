@@ -26,6 +26,9 @@ class NewCatPage extends Component {
         autoBind(this);
     }
 
+    componentDidMount() {
+        document.title = "Tạo gói mới"
+    }
 
     updateCatState(event) {
         const field = event.target.name;

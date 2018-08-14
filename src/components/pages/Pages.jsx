@@ -19,6 +19,9 @@ class Pages extends Component {
             this.props.actions.loadPages();
         }
     }
+    componentDidMount() {
+        document.title = "Trang"
+    }
 
     render() {
         let {pages} = this.props;
