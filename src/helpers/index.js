@@ -3,3 +3,4 @@ export * from './backend';
 export * from './history';
 export * from './authHeader';
 export { default as  pageApi} from './pageApi';
+export { default as  advertiseApi} from './advertiseApi';

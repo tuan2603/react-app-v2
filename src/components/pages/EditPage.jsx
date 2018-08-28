@@ -101,8 +101,7 @@ class EditPage extends Component {
                 <div className="card">
                     <div className="card-header">
                         <h2 className="wp-heading-inline">{page.title}</h2>
-                        <button type="button" onClick={this.toggleEdit} className="btn btn-primary">Sửa Trang
-                        </button>
+                        <button type="button" onClick={this.toggleEdit} className="btn btn-primary">Sửa Trang</button>
                         <button type="button" onClick={this.deletePage} className="btn btn-danger">Xóa</button>
                     </div>
                     <div className="form-group">

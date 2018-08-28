@@ -5,6 +5,7 @@ import termsReducers from './termsReducers';
 import introduceReducers from './introduceReducers';
 import cats from './catReducers';
 import pages from './pageReducers';
+import adver from './advertiseReducers';
 
 const rootReducer = combineReducers({
     userReducers,
@@ -13,6 +14,7 @@ const rootReducer = combineReducers({
     introduceReducers,
     cats,
     pages,
+    adver,
 });
 
 export default rootReducer;

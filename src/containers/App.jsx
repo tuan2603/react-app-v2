@@ -10,10 +10,11 @@ import '../assets/css/lib/vector-map/jqvmap.min.css';
 import '../assets/scss/style.css';
 import 'react-toastify/dist/ReactToastify.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
-import {LayoutRoute, EmptyLayout, MainLayout,CatsLayout} from "../components/layout";
+import {LayoutRoute, EmptyLayout, MainLayout, CatsLayout} from "../components/layout";
 import {setupTimeOut} from '../utils';
 import {Categories, CatPage, NewCatPage} from '../components/categories';
-import {Pages,EditPage, NewPage } from '../components/pages';
+import {Pages, EditPage, NewPage} from '../components/pages';
+import {AdvertiseList} from '../components/advertise';
 import {Notification} from '../components/notification';
 import {Login} from '../components/logins';
 import {history} from "../helpers";
@@ -50,7 +51,7 @@ class App extends Component {
                             path='/page-categories.html'
                             layout={MainLayout}
                             component={Categories}
-                            />
+                        />
 
                         <LayoutRoute
                             exact
@@ -85,6 +86,12 @@ class App extends Component {
                             path='/trang.html/:id'
                             component={EditPage}>
                         </LayoutRoute>
+
+                        <LayoutRoute
+                            exact
+                            path='/quangcao.html'
+                            layout={MainLayout}
+                            component={AdvertiseList}/>
                     </Switch>
                 </main>
             </Router>
