@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
+import {Link, Redirect} from 'react-router-dom';
 import PropTypes from 'prop-types';
 import autoBind from "react-autobind";
 import {bindActionCreators} from "redux";
@@ -10,11 +10,42 @@ import {apiUrl} from "../../utils";
 class AdvertiseList extends Component {
     constructor(props) {
         super(props);
+        this.state = {
+            advertises: this.props.advertises
+        }
         autoBind(this);
     }
 
+    componentDidMount() {
+        if (this.state.advertises.length === 0) {
+            this.props.actions.loadAdvertise();
+            setTimeout(()=>{
+                this.setState({advertises: [...this.props.advertises]});
+            },2000)
+        }
+    }
+
+    handleDelete( adv ){
+        const newItems = this.state.advertises.filter(adverItem=>{
+            return adverItem !== adv;
+        });
+
+        this.setState({
+            advertises: [...newItems]
+        });
+    }
+
+    handleStatus(adv){
+        // this.props.actions.deleteAdvertise({_id:id}).then(adver=>{
+        //     if (adver) {
+        //         this.props.actions.loadAdvertise();
+        //     }
+        // });
+    }
+
     render() {
-        let {advertises} = this.props;
+        let {advertises} = this.state;
+
         if (advertises.length > 0) {
             return (
                 <div className="content mt-3">
@@ -56,10 +87,13 @@ class AdvertiseList extends Component {
                                                         }).format(dateview)
                                                     }</td>
                                                     <td>
-                                                        <button type="button" className="btn btn-primary">Edit</button>
+                                                        <Link type="button" className="btn btn-primary" to={`quangcao.html/${adv._id}`} >Edit</Link>
                                                     </td>
                                                     <td>
-                                                        <button type="button" className="btn btn-danger">Public</button>
+                                                        <button type="button" className="btn btn-warning" onClick={(e)=>this.handleStatus(adv)}>{adv.status === 0 ? " not active "  : " active "}</button>
+                                                    </td>
+                                                    <td>
+                                                        <button type="button" className="btn btn-danger" onClick={(e)=>this.handleDelete(adv)}>delete</button>
                                                     </td>
                                                 </tr>
                                             })}
@@ -92,13 +126,12 @@ class AdvertiseList extends Component {
                 </div>
             )
         }
-
     }
-
 };
 
 AdvertiseList.propTypes = {
     advertises: PropTypes.array.isRequired,
+    actions: PropTypes.object.isRequired,
 };
 
 
@@ -109,7 +142,7 @@ function mapStateToProps(state) {
         };
     } else {
         return {
-            advertises: [{_id: '', title: '', content: '', url_image: '', create_at: Date.now()}]
+            advertises: []
         }
     }
 }

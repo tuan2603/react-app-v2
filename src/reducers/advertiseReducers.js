@@ -6,13 +6,14 @@ export default function advertiseReducer(state = null, action) {
         case LOAD_ADV_SUCCESS:
             return action.adver;
         case CREATE_ADV_SUCCESS:
-            return [
-                ...state.filter(adver => adver._id !== action.adver._id),
+            if (state === null) {
+                return [ Object.assign({}, action.adver)]
+            }
+            return [...state.filter(adver => adver._id !== action.adver._id),
                 Object.assign({}, action.adver)
             ];
         case UPDATE_ADV_SUCCESS:
-            return [
-                ...state.filter(adver => adver._id !== action.adver._id),
+            return [...state.filter(adver => adver._id !== action.adver._id),
                 Object.assign({}, action.adver)
             ];
         case DELETE_ADV_SUCCESS: {

@@ -7,8 +7,6 @@ import {loadCats} from './actions/catsActions';
 import {loadPages} from './actions/pageActions';
 import {loadUser} from './actions/userActions';
 
-
-
 store.dispatch(loadUser());
 store.dispatch(loadCats());
 store.dispatch(loadPages());

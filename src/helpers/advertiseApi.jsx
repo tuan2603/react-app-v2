@@ -40,8 +40,8 @@ class advertiseApi {
     static create(body) {
         const requestOptions = {
             method: 'POST',
-            headers: authHeaderJSon(),
-            body: JSON.stringify(body),
+            headers: authHeader(),
+            body: body,
         };
 
         return fetch(`${config.apiUrl}/api/advertise/insert`, requestOptions)

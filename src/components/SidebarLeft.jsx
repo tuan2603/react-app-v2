@@ -27,6 +27,9 @@ class SidebarLeft extends React.Component {
                             <li className="active">
                                 <Link to="/trang.html"> <i className="menu-icon fa ti-align-justify"></i> Trang </Link>
                             </li>
+                            <li className="active">
+                                <Link to="/quangcao.html"> <i className="menu-icon fa ti-align-justify"></i> Slider </Link>
+                            </li>
 
                         </ul>
                     </div>
