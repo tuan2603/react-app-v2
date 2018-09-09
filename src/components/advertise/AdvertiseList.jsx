@@ -26,26 +26,39 @@ class AdvertiseList extends Component {
     }
 
     handleDelete( adv ){
-        const newItems = this.state.advertises.filter(adverItem=>{
-            return adverItem !== adv;
+        this.props.actions.deleteAdvertise({_id:adv._id}).then(adver=>{
+            if (adver) {
+                const newItems = this.state.advertises.filter(adverItem=>{
+                    return adverItem !== adv;
+                });
+                this.setState({
+                    advertises: [...newItems]
+                });
+            }
         });
 
-        this.setState({
-            advertises: [...newItems]
-        });
     }
 
     handleStatus(adv){
-        // this.props.actions.deleteAdvertise({_id:id}).then(adver=>{
-        //     if (adver) {
-        //         this.props.actions.loadAdvertise();
-        //     }
-        // });
+        console.log("alo",adv);
+        if (adv.status === 0) {
+            adv.status = 1;
+        } else {adv.status = 0;}
+
+        this.props.actions.updateAdvertise(adv).then(adverup=>{
+            if (adverup) {
+               let newItems =  [...this.state.advertises.filter(adver => adver._id !== adverup._id),
+                    Object.assign({}, adverup)
+                ];
+                this.setState({
+                    advertises: newItems
+                });
+            }
+        });
     }
 
     render() {
         let {advertises} = this.state;
-
         if (advertises.length > 0) {
             return (
                 <div className="content mt-3">

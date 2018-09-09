@@ -14,7 +14,7 @@ import {LayoutRoute, EmptyLayout, MainLayout, CatsLayout} from "../components/la
 import {setupTimeOut} from '../utils';
 import {Categories, CatPage, NewCatPage} from '../components/categories';
 import {Pages, EditPage, NewPage} from '../components/pages';
-import {AdvertiseList, NewAdvertise} from '../components/advertise';
+import {AdvertiseList, NewAdvertise, EditAdvertise} from '../components/advertise';
 import {Notification} from '../components/notification';
 import {Login} from '../components/logins';
 import {history} from "../helpers";
@@ -98,6 +98,12 @@ class App extends Component {
                             layout={MainLayout}
                             path='/quangcao.html/new'
                             component={NewAdvertise}>
+                        </LayoutRoute>
+                        <LayoutRoute
+                            exact
+                            layout={MainLayout}
+                            path='/quangcao.html/:id'
+                            component={EditAdvertise}>
                         </LayoutRoute>
                     </Switch>
                 </main>
