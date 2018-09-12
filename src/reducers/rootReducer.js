@@ -6,6 +6,7 @@ import introduceReducers from './introduceReducers';
 import cats from './catReducers';
 import pages from './pageReducers';
 import adver from './advertiseReducers';
+import questions from './questionReducers';
 
 const rootReducer = combineReducers({
     userReducers,
@@ -15,6 +16,7 @@ const rootReducer = combineReducers({
     cats,
     pages,
     adver,
+    questions,
 });
 
 export default rootReducer;
