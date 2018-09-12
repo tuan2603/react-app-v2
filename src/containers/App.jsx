@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import {Router, Switch} from 'react-router-dom';
+import {BrowserRouter , Switch} from 'react-router-dom';
 import '../assets/css/normalize.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../assets/css/font-awesome.min.css';
@@ -29,7 +29,8 @@ class App extends Component {
         const {notification} = this.props;
 
         return (
-            <Router history={history}>
+
+            <BrowserRouter basename="/admin"  history={history}>
                 <main>
                     {(notification !== null) && <Notification/>}
 
@@ -107,7 +108,7 @@ class App extends Component {
                         </LayoutRoute>
                     </Switch>
                 </main>
-            </Router>
+            </BrowserRouter>
         );
     }
 }

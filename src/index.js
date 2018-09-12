@@ -10,7 +10,7 @@ import {loadUser} from './actions/userActions';
 store.dispatch(loadUser());
 store.dispatch(loadCats());
 store.dispatch(loadPages());
-store.subscribe(() => console.log(store.getState()));
+// store.subscribe(() => console.log(store.getState()));
 render((
         <Provider store={store}>
 
