@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import {BrowserRouter , Switch} from 'react-router-dom';
+import {BrowserRouter as Router , Switch} from 'react-router-dom';
 import '../assets/css/normalize.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../assets/css/font-awesome.min.css';
@@ -15,9 +15,10 @@ import {setupTimeOut} from '../utils';
 import {Categories, CatPage, NewCatPage} from '../components/categories';
 import {Pages, EditPage, NewPage} from '../components/pages';
 import {AdvertiseList, NewAdvertise, EditAdvertise} from '../components/advertise';
+import {QuestionList, NewQuestion, EditQuestion} from '../components/question';
 import {Notification} from '../components/notification';
 import {Login} from '../components/logins';
-import {history} from "../helpers";
+// import {history} from "../helpers";
 
 
 class App extends Component {
@@ -30,7 +31,7 @@ class App extends Component {
 
         return (
 
-            <BrowserRouter basename="/admin"  history={history}>
+            <Router  basename="/admin">
                 <main>
                     {(notification !== null) && <Notification/>}
 
@@ -106,9 +107,29 @@ class App extends Component {
                             path='/quangcao.html/:id'
                             component={EditAdvertise}>
                         </LayoutRoute>
+
+                        <LayoutRoute
+                            exact
+                            path='/cauhoi.html'
+                            layout={MainLayout}
+                            component={QuestionList}/>
+
+                        <LayoutRoute
+                            exact
+                            layout={MainLayout}
+                            path='/cauhoi.html/new'
+                            component={NewQuestion}>
+                        </LayoutRoute>
+
+                        <LayoutRoute
+                            exact
+                            layout={MainLayout}
+                            path='/cauhoi.html/:id'
+                            component={EditQuestion}>
+                        </LayoutRoute>
                     </Switch>
                 </main>
-            </BrowserRouter>
+            </Router >
         );
     }
 }

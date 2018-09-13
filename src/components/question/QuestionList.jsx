@@ -5,7 +5,7 @@ import autoBind from "react-autobind";
 import {bindActionCreators} from "redux";
 import * as questionActions from "../../actions/questionActions";
 import {connect} from "react-redux";
-import {apiUrl} from "../../utils";
+
 
 class QuestionList extends Component {
     constructor(props) {
@@ -18,36 +18,38 @@ class QuestionList extends Component {
 
     componentDidMount() {
         if (this.state.questions.length === 0) {
-            this.props.actions.loadAdvertise();
-            setTimeout(()=>{
+            this.props.actions.loadQuestion();
+            setTimeout(() => {
                 this.setState({questions: [...this.props.questions]});
-            },2000)
+            }, 2000)
         }
     }
 
-    handleDelete( question ){
-        this.props.actions.deleteQuestion({_id:question._id}).then(question=>{
-            if (question) {
-                const newItems = this.state.question.filter(questionItem=>{
-                    return questionItem !== question;
+    handleDelete(question) {
+        this.props.actions.deleteQuestion({_id: question._id}).then(questiond => {
+            if (questiond) {
+                const newState = Object.assign([], this.state.questions);
+                const indexOfCatToDelete = this.state.questions.findIndex(questionf => {
+                    return questionf._id === questiond._id
                 });
-                this.setState({
-                    questions: [...newItems]
-                });
+                newState.splice(indexOfCatToDelete, 1);
+                this.setState({questions: [...newState]});
+
             }
         });
 
     }
 
-    handleStatus(question){
-        console.log("question",question);
+    handleStatus(question) {
         if (question.status === 0) {
             question.status = 1;
-        } else {question.status = 0;}
+        } else {
+            question.status = 0;
+        }
 
-        this.props.actions.updateQuestion(question).then(questionup=>{
+        this.props.actions.updateQuestion(question).then(questionup => {
             if (questionup) {
-               let newItems =  [...this.state.questions.filter(question => question._id !== questionup._id),
+                let newItems = [...this.state.questions.filter(question => question._id !== questionup._id),
                     Object.assign({}, questionup)
                 ];
                 this.setState({
@@ -58,8 +60,8 @@ class QuestionList extends Component {
     }
 
     render() {
-        let {advertises} = this.state;
-        if (advertises.length > 0) {
+        let {questions} = this.state;
+        if (questions.length > 0) {
             return (
                 <div className="content mt-3">
                     <div className="animated fadeIn wrap">
@@ -68,8 +70,8 @@ class QuestionList extends Component {
                                 <div className="card">
                                     <div className="card-header">
                                         <h1 className="wp-heading-inline">Trang</h1>
-                                        <Link to={'/quangcao.html/new'} className="page-title-action">
-                                            <strong className="card-title btn btn-primary">Thêm Quảng cáo</strong>
+                                        <Link to={'/cauhoi.html/new'} className="page-title-action">
+                                            <strong className="card-title btn btn-primary">Thêm Câu hỏi</strong>
                                         </Link>
                                     </div>
                                 </div>
@@ -80,33 +82,42 @@ class QuestionList extends Component {
                                 <div className="card">
                                     <div className="card-body">
                                         <table className="table table-striped">
+                                            <thead>
+                                            <tr>
+                                                <th scope="col">Stt</th>
+                                                <th scope="col">Nhóm câu hỏi</th>
+                                                <th scope="col">Câu hỏi</th>
+                                                <th scope="col">Câu trả lời</th>
+                                                <th scope="col">Hành động</th>
+                                            </tr>
+                                            </thead>
                                             <tbody>
-                                            {advertises.map((adv, i) => {
-                                                let dateview = adv.updated_at !== undefined ? adv.updated_at : (adv.create_at !== undefined ? adv.create_at : Date.now());
-                                                return <tr key={adv._id}>
-                                                    <th scope="row">{i + 1}</th>
-                                                    <td><Link to={'/quangcao.html/' + adv._id}>{
-                                                        (adv.title !== undefined) && adv.title
+                                            {questions.map((question, i) => {
+                                                return <tr key={question._id}>
+                                                    <th scope="row" style={{width: "20px"}}>{question.no}</th>
+                                                    <td style={{width: "150px"}}>{
+                                                        (question.question_group !== undefined) && question.question_group
+                                                    }</td>
+                                                    <td style={{width: "150px"}}><Link
+                                                        to={'/cauhoi.html/' + question._id}>{
+                                                        (question.title_question !== undefined) && question.title_question
                                                     }</Link></td>
+
                                                     <td>{
-                                                        <img src={apiUrl + "/uploads/advertises/" + adv.url_image}
-                                                             height={200} alt={adv.title}/>
+                                                        question.content_answer.map((answer, i) => {
+                                                            return <p className="btn-block" key={answer._id} >- {answer.answer} </p>
+                                                        })
                                                     }</td>
-                                                    <td>{
-                                                        new Intl.DateTimeFormat('en-GB', {
-                                                            year: 'numeric',
-                                                            month: '2-digit',
-                                                            day: '2-digit'
-                                                        }).format(dateview)
-                                                    }</td>
-                                                    <td>
-                                                        <Link type="button" className="btn btn-primary" to={`quangcao.html/${adv._id}`} >Edit</Link>
-                                                    </td>
-                                                    <td>
-                                                        <button type="button" className="btn btn-warning" onClick={(e)=>this.handleStatus(adv)}>{adv.status === 0 ? " not active "  : " active "}</button>
-                                                    </td>
-                                                    <td>
-                                                        <button type="button" className="btn btn-danger" onClick={(e)=>this.handleDelete(adv)}>delete</button>
+                                                    <td style={{width: "100px"}}>
+                                                        <div className="card-body">
+                                                            <button type="button" className="btn btn-warning btn-block"
+                                                                    onClick={(e) => this.handleStatus(question)}>{question.status === 0 ? " not active " : " active "}</button>
+                                                            <Link type="button" className="btn btn-primary  btn-block"
+                                                                  to={`cauhoi.html/${question._id}`}>Edit</Link>
+                                                            <button type="button" className="btn btn-danger  btn-block"
+                                                                    onClick={(e) => this.handleDelete(question)}>delete
+                                                            </button>
+                                                        </div>
                                                     </td>
                                                 </tr>
                                             })}
@@ -128,8 +139,8 @@ class QuestionList extends Component {
                                 <div className="card">
                                     <div className="card-header">
                                         <h1 className="wp-heading-inline">Trang</h1>
-                                        <Link to={'/quangcao.html/new'} className="page-title-action">
-                                            <strong className="card-title btn btn-primary">Thêm Quảng cáo</strong>
+                                        <Link to={'/cauhoi.html/new'} className="page-title-action">
+                                            <strong className="card-title btn btn-primary">Thêm Câu hỏi</strong>
                                         </Link>
                                     </div>
                                 </div>

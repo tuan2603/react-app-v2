@@ -18,15 +18,15 @@ export function loadQuestionsSuccess(question) {
     return {type: types.LOAD_Q_SUCCESS, question};
 }
 
-export function updateQuestion(adver) {
+export function updateQuestion(question) {
     return function (dispatch) {
-        return questionApi.update(adver).then(Adv => {
-            if (Adv.response === true) {
-                dispatch(updateAdvSuccess(Adv.value));
+        return questionApi.update(question).then(question => {
+            if (question.response === true) {
+                dispatch(updateAdvSuccess(question.value));
                 dispatch(show_notification({txt: "update thành công", type: "suc"}));
-                return Adv.value;
+                return question.value;
             } else {
-                dispatch(show_notification({txt: Adv.value, type: "err"}));
+                dispatch(show_notification({txt: question.value, type: "err"}));
                 return null;
             }
         }).catch(error => {
@@ -41,15 +41,15 @@ export function updateAdvSuccess(question) {
 }
 
 
-export function createAdver(adver) {
+export function createQuestion(question) {
     return function (dispatch) {
-        return questionApi.create(adver).then(repadver => {
-            if (repadver.response === true) {
-                dispatch(createAdvSuccess(repadver.value));
+        return questionApi.create(question).then(question => {
+            if (question.response === true) {
+                dispatch(createQuestionSuccess(question.value));
                 dispatch(show_notification({txt: "insert thành công", type: "suc"}));
-                return repadver.value;
+                return question.value;
             } else {
-                dispatch(show_notification({txt: repadver.value, type: "err"}));
+                dispatch(show_notification({txt: question.value, type: "err"}));
                 return null;
             }
         }).catch(error => {
@@ -58,20 +58,19 @@ export function createAdver(adver) {
     };
 }
 
-export function createAdvSuccess(question) {
+export function createQuestionSuccess(question) {
     return {type: types.CREATE_Q_SUCCESS, question}
 }
 
-export function deleteQuestion(adver) {
+export function deleteQuestion(question) {
     return function (dispatch) {
-        return questionApi.delete(adver).then(resAdver => {
-            console.log("delete",resAdver);
-            if (resAdver.response === true) {
-                dispatch(deleteQuestionSuccess(resAdver.value));
+        return questionApi.delete(question).then(resQuestion => {
+            if (resQuestion.response === true) {
+                dispatch(deleteQuestionSuccess(resQuestion.value));
                 dispatch(show_notification({txt: "delete thành công", type: "suc"}));
                 return true;
             } else {
-                dispatch(show_notification({txt: resAdver.value, type: "err"}));
+                dispatch(show_notification({txt: resQuestion.value, type: "err"}));
                 return false;
             }
         }).catch(error => {

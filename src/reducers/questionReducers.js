@@ -19,10 +19,9 @@ export default function questionReducer(state = null, action) {
         case DELETE_Q_SUCCESS: {
             const newState = Object.assign([], state);
             const indexOfCatToDelete = state.findIndex(question => {
-                return question._id === action.adver._id
-            })
+                return question._id === action.question._id
+            });
             newState.splice(indexOfCatToDelete, 1);
-            //history.push('/page-categories.html');
             return newState;
         }
         default:

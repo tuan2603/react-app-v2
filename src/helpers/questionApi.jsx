@@ -29,8 +29,8 @@ class questionApi {
     static create(body) {
         const requestOptions = {
             method: 'POST',
-            headers: authHeader(),
-            body: body,
+            headers: authHeaderJSon(),
+            body: JSON.stringify(body),
         };
 
         return fetch(`${config.apiUrl}/api/question/insert`, requestOptions)
