@@ -30,11 +30,12 @@ class SidebarLeft extends React.Component {
                             <li className="active">
                                 <Link to="/quangcao.html"> <i className="menu-icon fa ti-align-justify"></i> Slider </Link>
                             </li>
-
                             <li className="active">
                                 <Link to="/cauhoi.html"> <i className="menu-icon fa ti-align-justify"></i> Câu hỏi </Link>
                             </li>
-
+                            <li className="active">
+                                <Link to="/testimonial.html"> <i className="menu-icon fa ti-align-justify"></i> Lời chứng thực </Link>
+                            </li>
                         </ul>
                     </div>
                 </nav>

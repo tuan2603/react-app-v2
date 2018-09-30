@@ -15,6 +15,7 @@ import {setupTimeOut} from '../utils';
 import {Categories, CatPage, NewCatPage} from '../components/categories';
 import {Pages, EditPage, NewPage} from '../components/pages';
 import {AdvertiseList, NewAdvertise, EditAdvertise} from '../components/advertise';
+import {TestimonialList, TestimonialNew, TestimonialEdit} from '../components/testimonial';
 import {QuestionList, NewQuestion, EditQuestion} from '../components/question';
 import {Notification} from '../components/notification';
 import {Login} from '../components/logins';
@@ -127,6 +128,27 @@ class App extends Component {
                             path='/cauhoi.html/:id'
                             component={EditQuestion}>
                         </LayoutRoute>
+
+                        <LayoutRoute
+                            exact
+                            path='/testimonial.html'
+                            layout={MainLayout}
+                            component={TestimonialList}/>
+
+                        <LayoutRoute
+                            exact
+                            layout={MainLayout}
+                            path='/testimonial.html/new'
+                            component={TestimonialNew}>
+                        </LayoutRoute>
+
+                        <LayoutRoute
+                            exact
+                            layout={MainLayout}
+                            path='/testimonial.html/:id'
+                            component={TestimonialEdit}>
+                        </LayoutRoute>
+
                     </Switch>
                 </main>
             </Router >
