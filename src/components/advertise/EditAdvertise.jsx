@@ -24,7 +24,7 @@ class EditAdvertise extends Component {
 
     componentDidMount() {
         document.title = "Chỉnh sửa slider - Quảng cáo"
-        if (!this.state.advertise._id === "") {
+        if (this.state.advertise._id == undefined || !this.state.advertise._id === "") {
             this.props.actions.loadAdvertise();
             this.setState({advertise: this.props.adver});
 
@@ -74,7 +74,7 @@ class EditAdvertise extends Component {
         if (isRedirect) {
             return  <Redirect to={`/quangcao.html`} />;
         }
-        if (advertise._id === "") {
+        if (advertise._id == undefined || advertise._id === "") {
             return (<div> </div>)
         }
         return (

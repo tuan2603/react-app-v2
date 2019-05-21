@@ -15,7 +15,7 @@ class Pages extends Component {
     }
 
     componentWillMount() {
-        if (this.props.pages[0]._id === '') {
+        if (this.props.pages.lenght > 0 &&  this.props.pages[0]._id === '') {
             this.props.actions.loadPages();
         }
     }

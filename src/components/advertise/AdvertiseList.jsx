@@ -26,16 +26,19 @@ class AdvertiseList extends Component {
     }
 
     handleDelete( adv ){
-        this.props.actions.deleteAdvertise({_id:adv._id}).then(adver=>{
-            if (adver) {
-                const newItems = this.state.advertises.filter(adverItem=>{
-                    return adverItem !== adv;
-                });
-                this.setState({
-                    advertises: [...newItems]
-                });
-            }
-        });
+        if( adv._id != undefined) {
+            this.props.actions.deleteAdvertise({_id:adv._id}).then(adver=>{
+                if (adver) {
+                    const newItems = this.state.advertises.filter(adverItem=>{
+                        return adverItem !== adv;
+                    });
+                    this.setState({
+                        advertises: [...newItems]
+                    });
+                }
+            });
+        }
+        
 
     }
 

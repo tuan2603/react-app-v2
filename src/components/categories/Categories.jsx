@@ -15,7 +15,8 @@ class Categories extends Component {
     }
 
     componentWillMount() {
-        if (this.props.cats[0]._id === '') {
+        //if (this.props.cats[0]._id == undefined && this.props.cats[0]._id === '') 
+        {
             this.props.actions.loadCats();
         }
     }

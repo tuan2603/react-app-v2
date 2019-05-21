@@ -60,7 +60,7 @@ class EditPage extends Component {
         });
     }
     componentWillReceiveProps(nextProps) {
-        if (this.props.page._id !== nextProps.page._id) {
+        if (this.props.page._id == undefined && this.props.page._id !== nextProps.page._id) {
             this.setState({page: nextProps.page});
         }
         this.setState({saving: false});
